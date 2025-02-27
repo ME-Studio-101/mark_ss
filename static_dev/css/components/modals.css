@@ -1,0 +1,173 @@
+/* #enrollModal {} */
+@media (min-width: 576px) {
+    .modal-dialog {
+        width: 633px;
+        max-width: 633px;
+    }
+}
+
+.modal_close {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+}
+
+.modal-body {
+    padding: 2rem 2.75rem;
+}
+
+.modal-body h2 {
+    width: auto;
+    margin-bottom: 12px;
+    font-family: Lato-Bold;
+    font-size: 40px;
+    color: #303030;
+}
+
+.modal-body p {
+    margin-bottom: 32px;
+    font-family: Lato-Regular;
+    font-size: 18px;
+    color: #676767;
+}
+
+.modal-body form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+
+.form-group label {
+    margin-bottom: 12px;
+    font-family: Lato-Regular;
+    font-size: 20px;
+    color: #303030;
+}
+
+
+/* Визуальные стили */
+.form-control {
+    font-family: Lato-Regular;
+    font-size: 16px;
+    color: #303030;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 10px 12px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+select.form-control {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23303030' d='M10.293 3.293L6 7.586 1.707 3.293A1 1 0 00.293 4.707l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 12px;
+    padding-right: 36px;
+}
+
+select.form-control option {
+    font-family: Lato-Regular;
+    font-size: 16px;
+    color: #303030;
+    background-color: #ffffff;
+    padding: 10px 12px;
+}
+
+select.form-control option:hover,
+select.form-control option:focus,
+select.form-control option:active {
+    background-color: #f5f5f5;
+}
+
+select.form-control::-ms-expand {
+    display: none;
+}
+
+/* Стиль для placeholder в select */
+select.form-control:invalid {
+    color: #999;
+}
+
+/* Дополнительные стили для улучшения внешнего вида на разных браузерах */
+@-moz-document url-prefix() {
+    select.form-control {
+        text-indent: 0.01px;
+        text-overflow: '';
+        padding-right: 36px;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select.form-control {
+        padding-right: 36px;
+    }
+}
+
+.modal-body #contactType {
+    width: 30% !important;
+}
+
+.modal-body #contact {
+    width: 65% !important;
+}
+
+@media (max-width: 575px) {
+
+    .modal-body #contactType {
+        width: 35% !important;
+    }
+
+    .modal-body #contact {
+        width: 59.8% !important;
+    }
+
+}
+
+
+/* Модальное окно подтверждения */
+#confirmationModal .modal-dialog {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#confirmationModal .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#confirmationModal .btn-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+#confirmationModal img {
+    position: relative;
+    left: auto;
+    top: 32px;
+    width: 364px;
+    height: auto;
+}
+
+#confirmationModal h3 {
+    margin-top: 208px;
+    font-family: Lato-Bold;
+    font-size: 32px;
+}
+
+#confirmationModal p {
+    margin-top: 12px;
+    font-family: Lato-Bold;
+    font-size: 18px;
+}

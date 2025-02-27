@@ -1,0 +1,83 @@
+/* Отключение неиспользуемых элементов */
+#tr_content_lg_md {
+    display: none;
+}
+/* Отключение неиспользуемых элементов */
+
+
+/* Заголовок */
+#tr_header {
+    margin-top: 115.2px;
+}
+
+#tr_header h2 {
+    font-family: Lato-Bold;
+    font-size: 43.2px;
+    color: #333;
+    margin-bottom: 21.6px;
+}
+
+#tr_header p {
+    font-family: Lato-Regular;
+    font-size: 28.8px;
+    color: #676767;
+}
+/* Заголовок */
+
+
+/* Кейсы */
+#tr_cases {
+    margin-top: 43.2px;
+}
+
+.tr_container {
+    width: 486px;
+    height: 788.4px;
+    margin-right: 21.6px;
+    border-radius: 24px;
+    background-color: #FFF;
+    flex: 0 0 auto;
+}
+
+.tr_container:last-child {
+    margin-right: 0;
+}
+
+.tr_container img {
+    width: 144px;
+    height: 144px;
+    margin: 18px 21.6px 21.6px 18px;
+    border-radius: 30px;
+}
+
+.tr_container>.row>.col h2 {
+    padding-right: 18px;
+    font-family: Lato-Bold;
+    font-size: 32.4px;
+    color: #333;
+}
+
+.tr_container>.row>.col h3 {
+    margin-top: 3.6px;
+    padding-right: 18px;
+    font-family: Lato-Regular;
+    font-size: 25.2px;
+    color: #676767;
+}
+
+#teacher1_sm>.row>.col h2 {
+    padding-top: 34.2px;
+}
+
+#teacher2_sm>.row>.col h2,
+#teacher3_sm>.row>.col h2 {
+    padding-top: 23.4px;
+}
+
+.tr_container p {
+    padding: 21.6px 28.8px 0 28.8px;
+    font-family: Lato-Regular;
+    font-size: 28.8px;
+    color: #676767;
+}
+/* Кейсы */

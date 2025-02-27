@@ -1,0 +1,96 @@
+{% load static %}
+<!-- Контент для SM -->
+<div id="um_content-sm" class="ss_container2">
+
+  <img src="{% static 'img/index/um_content.png' %}">
+
+  <div id="um_cases">
+    <!-- Прокрутка -->
+    <div id="um_scroll_buttons">
+      <div class="um_img_container">
+        <a href="#" role="button" id="um_scroll_left_sm">
+          <img src="{% static 'img/index/hs_left_arrow.svg' %}">
+        </a>
+      </div>
+      <div class="um_img_container">
+        <a href="#" role="button" id="um_scroll_right_sm">
+          <img src="{% static 'img/index/hs_right_arrow.svg' %}">
+        </a>
+      </div>
+    </div>
+
+    <!-- Кейсы -->
+    <div id="um_scroll_sm" data-spy="scroll" data-target="#um_scroll_spy" data-offset="0"
+      class="spy_horizontal_scrollable hs_pad">
+      <div id="um_1_sm" class="um_container horizontal_scrollable_item">
+        <div class="row">
+          <img src="{% static 'img/index/um_case1_sm.png' %}">
+        </div>
+        <div class="row">
+          <h3>Коммуникативный подход</h3>
+          <p>
+            Наша методика обучения английскому языку основана на коммуникативной системе, что позволяет ученикам
+            практиковать язык в реальных ситуациях, развивая навыки общения, понимания и произношения.
+          </p>
+        </div>
+      </div>
+      <div id="um_2_sm" class="um_container horizontal_scrollable_item">
+        <div class="row">
+          <img src="{% static 'img/index/um_case2_sm.png' %}">
+        </div>
+        <div class="row">
+          <h3>Полное погружение в языковую среду</h3>
+          <p>
+            Погружение в языковую среду - наш ключ к эффективному обучению. Студенты окружены английским языком, что
+            способствует естественному усвоению и пониманию.
+          </p>
+        </div>
+      </div>
+      <div id="um_3_sm" class="um_container horizontal_scrollable_item">
+        <div class="row">
+          <img src="{% static 'img/index/um_case3_sm.png' %}">
+        </div>
+        <div class="row">
+          <h3>Активное использование языка</h3>
+          <p>
+            Студенты не просто изучают, они активно используют английский язык, участвуя в дискуссиях, проектах и
+            ролевых играх, что улучшает их языковые навыки.
+          </p>
+        </div>
+      </div>
+      <div id="um_4_sm" class="um_container horizontal_scrollable_item">
+        <div class="row">
+          <img src="{% static 'img/index/um_case4_sm.png' %}">
+        </div>
+        <div class="row">
+          <h3>Современные образовательные технологии</h3>
+          <p>
+            Мы интегрируем современные образовательные технологии в процесс обучения, включая мультимедийные
+            материалы и интерактивные платформы, для обогащения опыта обучения.
+          </p>
+        </div>
+      </div>
+      <div id="um_5_sm" class="um_container horizontal_scrollable_item">
+        <div class="row">
+          <img src="{% static 'img/index/um_case5_sm.png' %}">
+        </div>
+        <div class="row">
+          <h3>Индивидуальный подход</h3>
+          <p>Индивидуальный подход к каждому студенту гарантирует, что учебная программа адаптируется под личные
+            нужды и скорость обучения, максимизируя эффективность обучения.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Отслеживание прокрутки -->
+    <div id="um_scroll_spy">
+      <a href="#um_1_sm" role="button" class="spy_circle spy_link active"></a>
+      <a href="#um_2_sm" role="button" class="spy_circle spy_link"></a>
+      <a href="#um_3_sm" role="button" class="spy_circle spy_link"></a>
+      <a href="#um_4_sm" role="button" class="spy_circle spy_link"></a>
+      <a href="#um_5_sm" role="button" class="spy_circle spy_link"></a>
+    </div>
+
+  </div>
+</div>

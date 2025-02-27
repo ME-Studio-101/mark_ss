@@ -1,0 +1,434 @@
+/* Теги в превьюшках страниц курсов */
+/* API:    
+--court_gradient_fill - градиентный заполнитель
+--court_gradient_stroke - градиентная граница */
+.course_tag {
+    position: relative;
+    margin: 0;
+    padding: 12px 20px;
+    font-family: Lato-Medium;
+    font-size: 16px;
+    color: var(--black_main_color);
+    background-image: var(--court_gradient_fill);
+    border: 0;
+    border-radius: 32px;
+    cursor: default !important;
+    user-select: none;
+    white-space: nowrap;
+}
+
+@media (max-width:575px) {
+    .course_tag {
+        padding: 14.4px 28.8px;
+        font-size: 25.2px;
+    }
+}
+
+.course_tag::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background-image: var(--court_gradient_stroke);
+    border-radius: 34px;
+    z-index: -1;
+}
+
+
+/* Кнопка "Связаться с нами" на Главном экране - LG */
+.contactBtn-index-lg {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 200px;
+    height: 56px;
+    font-family: Lato-SemiBold, sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: transparent;
+    border: 1.5px solid white;
+    border-radius: 28px;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contactBtn-index-lg::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background-image: url(/static/img/index/was_Flag_of_Great_Britain.png);
+    background-size: 428px 180px;
+    background-position: left top;
+    border-radius: 31px;
+    opacity: 0;
+    z-index: -2;
+    transition: opacity 0.3s ease;
+}
+
+.contactBtn-index-lg::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 25px;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.contactBtn-index-lg:not(:hover)::before {
+    transition: opacity 0.3s ease;
+}
+
+.contactBtn-index-lg:hover {
+    color: var(--bs-dark);
+    border-color: transparent;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contactBtn-index-lg:hover::before {
+    opacity: 1;
+}
+
+.contactBtn-index-lg:hover::after {
+    opacity: 0.9;
+    transform: scale(0.98);
+}
+
+.contactBtn-index-lg:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Кнопка "Связаться с нами" на Главном экране - MD */
+.contactBtn-index-md {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 200px;
+    height: 56px;
+    margin-right: 24px;
+    font-family: Lato-SemiBold;
+    font-size: 16px;
+    color: white;
+    background-color: transparent;
+    border: 1.5px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.contactBtn-index-md:focus,
+.contactBtn-index-md:active {
+    color: rgb(33, 37, 41);
+    background-color: white;
+}
+
+@media (max-width: 575px) {
+    .contactBtn-index-md {
+        display: none;
+    }
+}
+
+
+/* Кнопка "Связаться с нами" в панели Offcanvas - MDSM */
+.contactBtn-index-offcanvas {
+    display: inline-block;
+    position: relative;
+    width: 362.5px;
+    height: 70px;
+    margin: 0;
+    font-family: Lato-SemiBold;
+    font-size: 20px;
+    color: rgb(33, 37, 41);
+    background-color: white;
+    border: 1.5px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.contactBtn-index-offcanvas:focus,
+.contactBtn-index-offcanvas:active {
+    color: white;
+    background-color: transparent;
+}
+
+@media (max-width: 575px) {
+    .contactBtn-index-offcanvas {
+        width: 522px;
+        height: 100.8px;
+        font-size: 28.8px;
+        margin-bottom: 27.0px;
+    }
+}
+
+
+/* Кнопка "Связаться с нами" на остальных страницах (кроме главной)
+API:
+--contactBtn-pages-gradient - градиент */
+.contactBtn-pages {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 56px;
+    margin: 0;
+    padding: 3px;
+    font-family: Lato-Bold;
+    font-size: 17px;
+    line-height: 150%;
+    color: transparent;
+    background: white;
+    background-clip: content-box;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    user-select: none;
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .contactBtn-pages {
+        margin-right: 24px;
+    }
+}
+
+@media (max-width: 575px) {
+    .contactBtn-pages {
+        width: 522px;
+        height: 100.8px;
+        font-size: 30.6px;
+    }
+}
+
+.contactBtn-pages::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--contactBtn-pages-gradient);
+    background-clip: border-box;
+    border-radius: 50px;
+    z-index: -1;
+}
+
+.contactBtn-pages span {
+    position: relative;
+    background: var(--contactBtn-pages-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    z-index: 2;
+}
+
+.contactBtn-pages:hover {
+    color: white;
+    background: transparent;
+}
+
+.contactBtn-pages:hover:active {
+    box-shadow: inset #0000008C 0 4px 11px 0;
+}
+
+.contactBtn-pages-offcanvas {
+    width: 100%;
+    height: 70px;
+    margin-right: 0;
+    font-size: 22px;
+}
+
+@media (max-width: 575px) {
+    .contactBtn-pages-offcanvas {
+        height: 100.8px;
+        font-size: 28.8px;
+    }
+}
+
+
+/* Кнопки записи на курс на страницах курсов 
+API:
+--enrollcourbnt_gradient_fill: ; градиентный заполнитель
+--enrollcourbnt_gradient_stroke: ; градиентная граница */
+.courses-enrollBtn {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: Lato-Bold;
+    font-size: 17px;
+    color: white;
+    background-image: var(--enrollcourbnt_gradient_fill), var(--enrollcourbnt_gradient_stroke);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border: 2px double transparent;
+    border-radius: 50px;
+    box-shadow: inset #FFFFFFCC 0 2px 2px 0;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+@media (max-width: 575px) {
+    .courses-enrollBtn {
+        font-size: 30.6px;
+    }
+}
+
+.courses-enrollBtn:hover {
+    border: 0;
+    box-shadow: inset #00000059 0 4px 10px 0;
+}
+
+.courses-enrollBtn:hover:active {
+    border: 0;
+    box-shadow: inset #0000008C 0 4px 11px 0;
+}
+
+/* Для кнопки "Записаться" */
+.courses-enrollBtn_settings1 {
+    width: var(--courses-enrollBtn_w1);
+    height: var(--courses-enrollBtn_h1);
+    margin-top: var(--courses-enrollBtn_mt1);
+}
+
+/* Кнопки перелистывания "Преимуществ курсов" на страницах курсов */
+#adv_scroll_buttons {
+    width: 116px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+#adv_scroll_buttons-sm {
+    margin-top: calc(16px*1.8);
+    display: flex;
+    justify-content: center;
+}
+
+.adv_scroll_button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+.adv_scroll_button:active {
+    background-color: #FD8E4F1A;
+    border: 2px solid #FD8E4F;
+    transform: scale(0.95);
+}
+
+.adv_scroll_button.inactive {
+    opacity: 0.2;
+}
+
+.adv_scroll_button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.adv_scroll_button img {
+    display: block;
+    width: 19px;
+    height: 14px;
+}
+
+@media (min-width: 991px) {
+
+    .adv_scroll_button {
+        margin-right: auto;
+    }
+
+    .adv_scroll_button:last-child {
+        margin-left: auto;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+
+    .adv_scroll_button:last-child {
+        margin-left: 12px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    #adv_scroll_buttons {
+        width: 100%;
+        margin-top: 28.8px;
+        justify-content: space-between;
+    }
+
+    .adv_scroll_button {
+        width: 90px;
+        height: 90px;
+    }
+
+    .adv_scroll_button:last-child {
+        margin-left: 12px;
+    }
+
+    .adv_scroll_button img {
+        width: 27px;
+        height: 21.6px;
+    }
+}
+
+/* */
+
+/* УБРАТЬ ЭТО ОТСЮДОВА. (в переменные) */
+
+/* Костыли для кнопок скролла на страницах кусрсов */
+.adv_scroll_button2:active {
+    background-color: #5569E91A !important;
+    border: 2px solid #5569E9 !important;
+}
+
+.adv_scroll_button3:active {
+    background-color: #FB58871A !important;
+    border: 2px solid #FB5887 !important;
+}
+
+.adv_scroll_button4:active {
+    background-color: #863BCA1A !important;
+    border: 2px solid #863BCA !important;
+}
+
+/* */

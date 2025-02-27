@@ -1,0 +1,107 @@
+:root {
+    --char_mt: 57.6px auto 0;
+
+    --h2_fsz: 43.2px;
+    --h2_mt: 57.6px;
+    --p_fsz: 28.8px;
+    --p_mt: 21.6px;
+    --p_mb: 43.2px;
+
+    --ch_case_p: 28.8px;
+    --ch_case_h3_fsz: 36px;
+    --ch_case_hr_m: 28.8px 0;
+    --ch_case_li_mb: 43.2px;
+    --ch_case_li_fsz: 28.8px;
+    --ch_price_c_p: 28.8px 43.2px;
+    --ch_price_c_fsz: 28.8px;
+    --ch_price_c_fsz2: 43.2px;
+}
+
+
+
+#char {
+    margin: var(--char_mt);
+    background-color: #f9f9f9;
+    border-radius: 20px;
+}
+
+#char h2 {
+    margin-top: var(--h2_mt);
+    font-family: Lato-Bold;
+    font-size: var(--h2_fsz);
+    color: var(--black_main_color);
+}
+
+#char p {
+    margin-top: var(--p_mt);
+    margin-bottom: var(--p_mb);
+    font-family: Lato-Regular;
+    font-size: var(--p_fsz);
+    color: var(--black_submain_color);
+}
+
+
+/* Кейсы - общее */
+.char_case {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: var(--ch_case_p);
+    background-color: var(--ch_case_color2);
+    border-radius: 24px;
+
+}
+
+.char_case:first-child {
+    margin-bottom: 24px;
+    background-color: var(--ch_case_color1);
+}
+
+
+/* Кейсы - внутрянка */
+.char_case h3 {
+    font-family: Lato-Bold;
+    font-size: var(--ch_case_h3_fsz);
+    color: var(--black_main_color);
+}
+
+.char_case hr {
+    margin: var(--ch_case_hr_m);
+    border: none;
+    height: 1px;
+    opacity: 1;
+}
+
+#char_hr1 {
+    background: linear-gradient(to right, #FFCBC833 0%, #FFCBC8CC 52%, #FFCBC833 100%);
+}
+
+#char_hr2 {
+    background: linear-gradient(to right, #F0E7CF33 0%, #F0E7CF 52%, #F0E7CF33 100%);
+}
+
+
+.char_case li {
+    margin-bottom: var(--ch_case_li_mb);
+    font-family: Lato-Regular;
+    font-size: var(--ch_case_li_fsz);
+    line-height: 150%;
+    color: var(--black_main_color);
+}
+
+.char_price_container {
+    padding: var(--ch_price_c_p);
+    font-family: Lato-Medium;
+    font-size: var(--ch_price_c_fsz);
+    line-height: 150%;
+    background-color: #ffffff;
+    color: var(--black_main_color);
+    border-radius: 24px;
+}
+
+.char_price_container span {
+    font-family: Lato-Bold;
+    font-size: var(--ch_price_c_fsz2);
+    line-height: 150%;
+    color: var(--black_main_color);
+}

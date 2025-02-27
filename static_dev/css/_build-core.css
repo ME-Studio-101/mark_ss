@@ -1,0 +1,17 @@
+
+
+@import url("/static/css/engine/bootstrap.min.css");
+
+@import url("/static/css/includes/colors.css");
+@import url("/static/css/includes/fonts.css");
+
+@import url("/static/css/components/typographies.css");
+@import url("/static/css/components/buttons.css");
+@import url("/static/css/components/icons.css");
+@import url("/static/css/components/back2home.css");
+@import url("/static/css/components/modals.css");
+
+@import url("/static/css/includes/header.css");
+@import url("/static/css/includes/footer.css");
+
+@import url("/static/css/core.css");

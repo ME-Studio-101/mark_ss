@@ -1,0 +1,67 @@
+#call2ass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-top: 44px;
+    padding-top: 44px;
+    padding-bottom: 44px;
+}
+
+#call2ass img {
+    width: 688px;
+    height: 410px;
+}
+
+#call2ass-content h2 {
+    margin-top: 44px;
+    font-family: Lato-Bold;
+    font-size: 40px;
+    color: #333;
+}
+
+#call2ass-content p {
+    margin-top: 12px;
+    font-family: Lato-Regular;
+    font-size: 18px;
+    color: #676767;
+}
+
+#call2ass-content form {
+    margin-top: 32px;
+}
+
+
+/* Форма */
+#call2assForm,
+#call2assForm2 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#call2assForm input,
+#call2assForm2 input,
+#call2assForm select,
+#call2assForm2 select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#call2assForm button,
+#call2assForm2 button {
+    width: 100%;
+    height: 56px;
+}
+
+/* */
+
+#contactType {
+    width: 35% !important;
+}
+
+#contact {
+    width: 60% !important;
+}

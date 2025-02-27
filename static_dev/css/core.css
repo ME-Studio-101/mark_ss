@@ -1,0 +1,127 @@
+/* Глобальные переменные */
+:root {
+    --hs-cases-start-end-min-width: 80px;
+    --ss_w-lg: 1440px;
+    --ss_w-md: 768px;
+    --ss_w-sm: 575px;
+}
+
+/* Глобальные переменные */
+
+
+/* Глобальные настройки */
+::-webkit-scrollbar {
+    display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    line-height: 150%;
+    margin: 0;
+}
+
+/* Глобальные настройки */
+
+
+/* Нормализация стилей Bootstrap */
+.row {
+    --bs-gutter-x: none;
+}
+
+.modal-w_fix {
+    margin: 0 !important;
+}
+/* */
+
+/* Основные элементы */
+body {
+    background-color: #F9F9F9;
+}
+
+main {
+    /* Последовательное отображение `main` в IE. */
+    display: block;
+}
+
+header>.ss_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-radius: 0;
+    overflow: visible;
+}
+
+img {
+    /* Удаление границы изображений внутри ссылок в IE 10.*/
+    border-style: none;
+}
+
+/* Основные элементы */
+
+
+/* Доп стили для кнопок */
+.glow {
+    box-shadow: inset rgba(255, 255, 255, 0.8) 0px 2px 2px 0px, rgba(51, 96, 102, 0.2) 0px 20px 25px 0px;
+}
+
+.gradient-border {
+    border: 2px double transparent;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+/* Доп стили для кнопок */
+
+
+/* Горизонтальный скролл */
+.horizontal_scrollable,
+.spy_horizontal_scrollable {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Горизонтальный скролл */
+
+
+/* Утилиты */
+
+.mt-2em {
+    margin-top: 2em !important;
+}
+
+@media (min-width: 991px) {
+    .mt-2em-lg {
+        margin-top: 2em !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .mt-2em-md {
+        margin-top: 2em !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .mt-2em-sm {
+        margin-top: 2em !important;
+    }
+}
+
+.br_none {
+    display: none;
+}
+
+/* Утилиты */
+
+/* Это позволит легко управлять сеткой с помощью width */
+.cast_col {
+    flex: 0 0 auto;
+}

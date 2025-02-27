@@ -1,0 +1,52 @@
+
+#abac2u {
+    width: var(--abac2u-w);
+    height: var(--abac2u-h);
+    margin-top: var(--abac2u-mt);
+    margin-bottom: var(--abac2u-mb);
+    border-radius: 32px;
+    background: url(/static/img/about/abac2u_image-lg.png) no-repeat, url(/static/img/about/abac2u_image_pattern-lg.png), linear-gradient(to right, #26D6B3, #4284DB);
+    background-position: var(--abac2u_image-pos), center, center;
+    background-size: var(--abac2u_image-w) auto, contain, contain;
+}
+
+#abac2u_content {
+    position: relative;
+    padding-top: var(--abac2u_content-pt);
+    padding-left: var(--abac2u_content-pl);
+    padding-right: var(--abac2u_content-pr);
+}
+
+#abac2u_content h2 {
+    font-family: var(--abac2u_h2-fst);
+    font-size: var(--abac2u_h2-fsz);
+    color: #FFFFFF;
+}
+
+#abac2u_content p {
+    margin-top: var(--abac2u_p-mt);
+    font-family: var(--abac2u_p-fst);
+    font-size: var(--abac2u_p-fsz);
+    color: #FFFFFF;
+}
+
+#abac2u_button {
+    width: var(--abac2u_button-w);
+    height: var(--abac2u_button-h);
+    margin-top: var(--abac2u_btn-mt);
+    font-family: var(--abac2u_btn-fst);
+    font-size: var(--abac2u_btn-fsz);
+    color: #333;
+    border: 0;
+    border-radius: 50px;
+    box-shadow: #2A7DC2 0 20px 25px 0;
+}
+
+#abac2u_button:hover {
+    box-shadow: #1063A8 0 30px 35px 0;
+}
+
+#abac2u_button:hover:active {
+    box-shadow: inset #1063A8 0 4px 11px 0;
+}
+

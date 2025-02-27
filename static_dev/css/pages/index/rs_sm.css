@@ -1,0 +1,36 @@
+
+
+#rs_header {
+    margin-top: 115.2px;
+}
+
+#rs_header h2 {
+    font-family: Lato-Bold;
+    font-size: 43.2px;
+    color: #333;
+}
+
+#rs_header p {
+    margin-top: 24.6px;
+    font-family: Lato-Regular;
+    font-size: 28.8px;
+    color: #676767;
+}
+
+#rs_cases {
+    margin: 43.2px 0;
+}
+
+.rs_case iframe {
+    width: 486.0px;
+    height: 867.6px;
+    border-radius: 24px;
+}
+
+.rs_case {
+    margin-right: 28.8px;
+}
+
+.rs_case:last-child {
+    margin-right: 0;
+}

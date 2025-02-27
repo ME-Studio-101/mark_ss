@@ -1,0 +1,230 @@
+@media (min-width: 576px) and (max-width: 991px) {
+    .carousel {
+        padding: 0 calc(40px + var(--hs-cases-start-end-min-width) - var(--abaca_case-px));
+        margin-bottom: var(--abaca_case-py);
+    }
+}
+
+@media (max-width: 575px) {
+    .carousel {
+        padding: 0 calc(27px + var(--hs-cases-start-end-min-width) - var(--abaca_case-px));
+        margin-bottom: var(--abaca_case-py);
+    }
+}
+
+
+
+.abaca_case {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: var(--abaca_case-h);
+    padding-top: var(--abaca_case-py);
+    padding-right: var(--abaca_case-px);
+    padding-bottom: var(--abaca_case-py);
+    padding-left: var(--abaca_case-px);
+}
+
+
+.abaca_aplication {
+    margin-right: var(--abaca_aplica-mr);
+    width: var(--abaca_aplica-w);
+    height: var(--abaca_aplica-h);
+    border-radius: 32px;
+}
+
+#abaca_aplication-1 {
+    background: url(/static/img/about/abaca_aplication_image-1.png) no-repeat, url(/static/img/about/abaca_pattern.png), linear-gradient(to right, #4284DBA7, #29EAC4A7);
+    background-position: center;
+    background-size: contain;
+}
+
+@media (max-width: 575px) {
+    #abaca_aplication-1 {
+        background: url(/static/img/about/abaca_aplication_image_sm-1.png) no-repeat, url(/static/img/about/abaca_pattern.png), linear-gradient(to right, #4284DBA7, #29EAC4A7);
+        background-position: 0, center, center;
+        background-size: contain;
+    }
+}
+
+#abaca_aplication-2 {
+    background: url(/static/img/about/abaca_aplication_image-2.png) no-repeat, url(/static/img/about/abaca_pattern.png), linear-gradient(to right, #4284DBA7, #29EAC4A7);
+    background-position: center;
+    background-size: contain;
+}
+
+@media (max-width: 575px) {
+    #abaca_aplication-2 {
+        background: url(/static/img/about/abaca_aplication_image_sm-2.png) no-repeat, url(/static/img/about/abaca_pattern.png), linear-gradient(to right, #4284DBA7, #29EAC4A7);
+        background-position: 0, center, center;
+        background-size: contain;
+    }
+}
+
+#abaca_aplication-3 {
+    background: url(/static/img/about/abaca_aplication_image-3.png) no-repeat, url(/static/img/about/abaca_pattern.png), linear-gradient(to right, #4284DBA7, #29EAC4A7);
+    background-position: center;
+    background-size: contain;
+}
+
+@media (max-width: 575px) {
+    #abaca_aplication-3 {
+        background: url(/static/img/about/abaca_aplication_image_sm-3.png) no-repeat, url(/static/img/about/abaca_pattern.png), linear-gradient(to right, #4284DBA7, #29EAC4A7);
+        background-position: 0, center, center;
+        background-size: contain;
+    }
+}
+
+.abaca_aplication_in {
+    position: relative;
+    left: calc(var(--abaca_aplica-w) - var(--abaca_aplica_in-w)/2);
+    top: calc(var(--abaca_aplica-h)/10);
+    width: var(--abaca_aplica_in-w);
+    height: var(--abaca_aplica_in-h);
+    background-color: #FFFFFFCC;
+    border: 2px dashed #00C2FF;
+    border-radius: 24px;
+    box-shadow: #0000001A 0 4px 6px -1px;
+    backdrop-filter: blur(10px);
+}
+
+@media (max-width: 991px) {
+    .abaca_aplication_in {
+        top: var(--abaca_aplica_in-pad2border);
+        left: calc(var(--abaca_aplica-w) - var(--abaca_aplica_in-w) - var(--abaca_aplica_in-pad2border))
+    }
+}
+
+#abaca_aplication_in-1 {
+    background: url(/static/img/about/abaca_aplication_in_image-1.png) no-repeat, #FFFFFFCC;
+    background-position: center;
+    background-size: 100px 100px;
+}
+
+#abaca_aplication_in-2 {
+    background: url(/static/img/about/abaca_aplication_in_image-2.png) no-repeat, #FFFFFFCC;
+    background-position: center;
+    background-size: 100px 100px;
+}
+
+#abaca_aplication_in-3 {
+    background: url(/static/img/about/abaca_aplication_in_image-3.png) no-repeat, #FFFFFFCC;
+    background-position: center;
+    background-size: 100px 100px;
+}
+
+
+.abaca_case h3 {
+    width: var(--abaca_content-max_w);
+    margin-top: var(--abaca_h3-mt);
+    font-family: var(--abaca_h3_fst);
+    font-size: var(--abaca_h3_fsz);
+    color: #3EC5E1;
+    text-transform: uppercase;
+}
+
+.abaca_case h2 {
+    width: var(--abaca_content-max_w);
+    margin-top: var(--abaca_h2-mt);
+    font-family: var(--abaca_h2_fst);
+    font-size: var(--abaca_h2_fsz);
+}
+
+.abaca_case p {
+    width: var(--abaca_content-max_w);
+    margin-top: var(--abaca_p-mt);
+    font-family: var(--abaca_p_fst);
+    font-size: var(--abaca_p_fsz);
+}
+
+/* Кнопки скролла */
+@media (min-width: 576px) and (max-width: 991px) {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        top: auto;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        top: auto;
+        bottom: -27px;
+    }
+
+}
+
+.carousel-indicators {
+    margin-bottom: 0;
+}
+
+.abaca_scroll_button {
+    width: 50px;
+    height: 50px;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+@media (max-width: 575px) {
+    .abaca_scroll_button {
+        width: 90px;
+        height: 90px;
+    }
+
+    .abaca_scroll_button svg {
+        width: 34.2px;
+        height: 25.2px;
+    }
+}
+
+.abaca_scroll_button:last-child {
+    margin-left: auto;
+}
+
+.abaca_scroll_button:active {
+    background-color: #3EC5E11A;
+    border: 2px solid #3EC5E1;
+    transform: scale(0.95);
+}
+
+.abaca_scroll_button.inactive {
+    opacity: 0.2;
+}
+
+/* */
+
+/* Шпион прокрутки */
+.spy_circle[data-bs-target] {
+    width: 12px;
+    height: 12px;
+    margin: 0 12px;
+    background-color: var(--spy_circles_color) !important;
+    border-radius: 50%;
+    opacity: 0.2;
+    transition: opacity 0.3s ease;
+}
+
+@media (max-width: 575px) {
+    .spy_circle[data-bs-target] {
+        width: 14.4px;
+        height: 14.4px;
+    }
+}
+
+.spy_circle.active {
+    opacity: 1;
+}
+
+/* */

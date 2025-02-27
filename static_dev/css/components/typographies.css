@@ -1,0 +1,13 @@
+.gradient_text {
+    background-image: var(--gradient_text-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.gradient_text_2 {
+    background-image: var(--gradient_text-gradient_2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

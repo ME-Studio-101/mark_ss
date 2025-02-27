@@ -1,0 +1,57 @@
+#ababa {
+    margin-top: var(--ababa-mt);
+    margin-bottom: var(--ababa-mb);
+    padding-top: var(--ababa-pt);
+    padding-bottom: var(--ababa-pb);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 1440px) {
+    #ababa {
+        height: var(--ababa-h);
+    }
+}
+
+#ababa h2 {
+    width: var(--ababa-w);
+    margin-top: var(--ababa_h2-mt);
+    font-family: var(--ababa_h2-fst);
+    font-size: var(--ababa_h2-fsz);
+}
+
+#ababa p {
+    width: var(--ababa-w);
+    margin-top: var(--ababa_p-mt);
+    font-family: var(--ababa_p-fst);
+    font-size: var(--ababa_p-fsz);
+    color: #676767;
+    order: var(--ababa_p-order);
+}
+
+#ababa p span {
+    font-family: var(--ababa_p_span-fst);
+    font-size: var(--ababa_p_span-fsz);
+    background-image: linear-gradient(to right, #4284DB, #29EAC4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#ababa_image {
+    width: var(--ababa_image-w);
+    height: var(--ababa_image-h);
+    margin-top: var(--ababa_image-mt);
+    background: url(/static/img/about/ababa_vector.svg) no-repeat, url(/static/img/about/ababa_pattern.png) no-repeat, linear-gradient(to right, #4284db, #29eac4);
+    background-position: center;
+    background-size: cover;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+#ababa_image img {
+    width: var(--ababa_image_img-w);
+    height: var(--ababa_image_img-h);
+    transform: translateY(var(--ababa_image-top));
+}

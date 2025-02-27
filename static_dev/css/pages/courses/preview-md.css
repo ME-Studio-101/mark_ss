@@ -1,0 +1,136 @@
+:root {
+    --preview_mt: 104px;
+
+
+    --prewiev_h2_mt: 16px;
+    --prewiev_h2_fsz: 50px;
+
+    --tags_m: 16px;
+    --tags_gap: 12px;
+
+
+    --prewiev_p_mt: 24px;
+    --prewiev_p_fsz: 18px;
+
+    --courses-enrollBtn_w1: 275px;
+    --courses-enrollBtn_h1: 56px;
+    --courses-enrollBtn_mt1: 24px;
+
+    --preview_block2_w: 100%;
+    --preview_block2_h: 367px;
+    --preview_block2_m: 24px 0 0 0;
+    --preview_block2_p: 0 32px;
+    --preview_block2_borr: 32px;
+    --preview_block2_gap: 24px;
+    --preview_block2_img_size: 24px;
+    --preview_block2_img_mr: 10px;
+
+
+}
+
+
+/* Отключение лишнего */
+#prewiew-lg {
+    display: none;
+}
+
+/* */
+
+/* Контейнер */
+#prewiew {
+    margin-top: var(--preview_mt);
+}
+
+/* */
+
+
+/* Теги кратко объясняющие суть */
+#course_tags {
+    display: flex;
+    margin-top: var(--tags_m);
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+}
+
+#course_tags>* {
+    margin: 2px;
+}
+
+#course_tags>*:first-child {
+    margin-right: var(--tags_gap);
+}
+
+/* */
+
+/* Заголовок h2 */
+#prewiew h2 {
+    margin-top: var(--prewiev_h2_mt);
+    font-family: Lato-Bold;
+    font-size: var(--prewiev_h2_fsz);
+}
+
+/* */
+
+/* Абзац */
+#prewiew p {
+    margin-top: var(--prewiev_p_mt);
+    font-family: Lato-Regular;
+    font-size: var(--prewiev_p_fsz);
+    color: var(--black_submain_color);
+}
+
+/* */
+
+
+/* Второй блок контента справа */
+#prewiew-additional_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--preview_block2_gap);
+    position: relative;
+    padding: var(--preview_block2_p);
+    width: var(--preview_block2_w);
+    height: var(--preview_block2_h);
+    margin: var(--preview_block2_m);
+    border-radius: var(--preview_block2_borr);
+    background: url(/static/img/courses/W-vector2.svg) no-repeat, var(--preview_block2_gradient);
+    background-size: cover;
+}
+
+
+
+#prewiew-additional_content::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 34%;
+    width: 100%;
+    height: 100%;
+    background: url(/static/img/courses/course1_preview_img_man.png) no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+/* */
+
+/* Контейнеры фраз внутри второго блока */
+.course_preview_phrase {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+    align-self: flex-start;
+    padding: 13px 16px;
+    background-color: white;
+    border-radius: 15px 15px 0 15px;
+}
+
+.course_preview_phrase img {
+    width: var(--preview_block2_img_size);
+    height: var(--preview_block2_img_size);
+    margin-right: var(--preview_block2_img_mr);
+}
+
+/* */

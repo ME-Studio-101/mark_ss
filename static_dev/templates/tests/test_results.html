@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Результаты теста на уровень английского языка | SpeakSwift
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/pages/tests/_vars-test_result.css' %}">
+<!-- Стили для экранов до 575px -->
+<link rel="stylesheet" href="{% static 'css/pages/tests/_build-test_result.css' %}">
+{% endblock %}
+
+{% block main %}
+<div class="header-respect">
+</div>
+
+<div id="results-resume" class="ss_container">
+  <h2>Правильных ответов:<br>{{ correct_answers }} из {{ total_questions }}<button class="ss_btn">{{ level }}</button>
+  </h2>
+  <p>
+    {{ result_hello }}
+  </p>
+  <p>
+    {{ result_text }}
+  </p>
+</div>
+
+<div id="results_actions" class="ss_container">
+
+  <div id="call2as" class="results_action">
+    <h3>Онлайн-консультация</h3>
+    <p>
+      Свяжитесь с нами, чтобы мы могли провести бесплатную онлайн-консультацию.
+    </p>
+    <form id="call2assForm2" class="ajax-form" method="post" data-url="{% url 'form_handler' %}">
+      {% include 'includes/c2aform2.html' %}
+      <button type="submit" class="courses-enrollBtn courses-enrollBtn_settings1 w-100">Записаться</button>
+    </form>
+  </div>
+
+  <div id="plan" class="results_action">
+    <h3>План бесплатной онлайн-консультации</h3>
+    <p>
+    <ul>
+      <li>Знакомство с преподавателем</li>
+      <li>Оценка вашего уровня владения английским</li>
+      <li>Обсуждение деталей курса</li>
+      <li>Информация о предстоящих занятиях</li>
+    </ul>
+    </p>
+  </div>
+</div>
+
+{% endblock %}
+
+
+
+
+{% block scripts-after %}
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Принудительная перезагрузка стилей
+    const links = document.getElementsByTagName('link');
+    for (let i = 0; i < links.length; i++) {
+        if (links[i].rel === 'stylesheet') {
+            const href = links[i].href;
+            links[i].href = href + (href.includes('?') ? '&' : '?') + 'reload=' + new Date().getTime();
+        }
+    }
+});
+</script>
+
+{% endblock %}

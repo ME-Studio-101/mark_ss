@@ -1,0 +1,627 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block ss-styles %}
+<!-- Стили для экранов до 575px -->
+<link rel="stylesheet" href="{% static 'css/pages/index/build-sm.css' %}" media="only screen and (max-width: 575px)">
+<!-- Стили для экранов от 576px до 991px -->
+<link rel="stylesheet" href="{% static 'css/pages/index/build-md.css' %}"
+  media="only screen and (min-width: 576px) and (max-width: 991px)">
+<!-- Стили для экранов больше 992px -->
+<link rel="stylesheet" href="{% static 'css/pages/index/build-lg.css' %}" media="only screen and (min-width: 992px)">
+
+{% endblock ss-styles %}
+
+{% block content %}
+
+<!-- #1 Первый экран -->
+
+<div id="was" class="ss_container">
+  <!-- Контент -->
+  <h1 id="was_text1">
+    WE ARE<br>
+    SPEAK <img id="swift" src="{% static 'img/index/was_swift.svg' %}" alt="SWIFT"><br>
+    <img id="wc_tick_lg_md" src="{% static 'img/index/was_tick.svg' %}">
+    <img id="wc_tick_sm" src="{% static 'img/index/was_tick_sm.svg' %}">
+  </h1>
+
+  <p id="was_text2">
+    Откройте мир английского с <strong>онлайн-<br class="br_none br_sm">школой</strong> Speakswift.<br
+      class="br_none br_lg br_md">Видеть свой<br class="br_none br_sm"> прогресс - лучшая мотивация на пути<br
+      class="br_none br_sm"> к совершенству.
+  </p>
+
+  <button id="enrollBtn">Записаться<span> Бесплатно</span></button>
+</div>
+
+
+<!-- #2 Кому подходит обучение -->
+
+<!-- Заголовок -->
+<div id="wc_header" class="ss_container">
+  <h2>Кому подходит<br class="br_none br_sm"><span class="blue-gradient-text">обучение?</span></h2>
+  <p>
+    Для всех возрастов и целей! Наша<br class="br_none br_sm"> онлайн-школа английского предлагает<br
+      class="br_none br_md"> программы обучения как взрослым,<br class="br_none br_sm"> так и
+    детям, а также<br class="br_none br_lg"> корпоративным<br class="br_none br_md br_sm"> клиентам. Независимо от
+    вашей цели<br class="br_none br_sm"> или уровня, у нас есть подходящий<br class="br_none br_sm"> для<br
+      class="br_none br_md"> вас курс!
+  </p>
+</div>
+
+<!-- Кейсы -->
+<div id="wc_cases" class="ss_container2">
+  <div class="horizontal_scrollable hs_pad">
+    <div id="wc_man" class="wc_container">
+      <h3>Взрослым</h3>
+      <p>
+        Английский для<br class="br_none br_sm"> карьеры,<br class="br_none br_lg br_md"> путешествий<br
+          class="br_none br_sm"> и общения
+      </p>
+    </div>
+    <div id="wc_child" class="wc_container">
+      <h3>Детям</h3>
+      <p>Английский для<br class="br_none br_sm"> развития, <br class="br_none br_lg br_md"> подготовки<br
+          class="br_none br_sm"> к тестам<br> и экзаменам</p>
+    </div>
+    <div id="wc_companion" class="wc_container">
+      <h3>Компаниям</h3>
+      <p>
+        Корпоративные курсы<br> c учетом специфики<br> бизнеса
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- #3 Девочка на стуле -->
+
+<div id="cg_wrapper" class="ss_container">
+  <div id="cg_content">
+    <h2>
+      Пройдите урок английского<br class="br_none br_sm"> онлайн<br class="br_none br_lg br_md"> бесплатно в удобное<br
+        class="br_none br_sm"> для вас время
+    </h2>
+    <ul>
+      <li>Покажем, как проходит обучение</li>
+      <li>Определим ваш уровень</li>
+      <li>Поставим цели и определим их достижения</li>
+    </ul>
+    <button>Отправить Заявку</button>
+  </div>
+</div>
+
+
+<!-- #4 Форматы занятий -->
+<div id="hueta"></div>
+
+<!-- Заголовок -->
+<div id="lf_header" class="ss_container">
+  <h2>Доступные форматы <span class="blue-gradient-text">занятий</span></h2>
+
+  <!-- Прокрутка для LG MD -->
+  <div id="lf_scroll_buttons">
+    <div class="lf_img_container">
+      <a href="#" role="button" id="lf_scroll_left">
+        <img src="{% static 'img/index/hs_left_arrow.svg' %}">
+      </a>
+    </div>
+    <div class="lf_img_container">
+      <a href="#" role="button" id="lf_scroll_right">
+        <img src="{% static 'img/index/hs_right_arrow.svg' %}">
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Кейсы для LG MD -->
+<div id="lf_cases-lgmd" class="ss_container2">
+  <div id="lf_scroll" class="horizontal_scrollable hs_pad">
+    <div id="lf_1" class="lf_container">
+      <button id="format1-price" class="price-button">от $9 до $20</button>
+      <h3>Индивидуальные занятия</h3>
+      <p>
+        Научитесь свободно говорить и<br class="br_none br_sm"> понимать,<br class="br_none br_lg br_md">
+        прокачайте<br class="br_none br_sm"> грамматику английского языка<br class="br_none br_md"> и<br
+          class="br_none br_lg br_sm"> пополните словарный запас на<br class="br_none br_lg br_md br_sm">
+        индивидуальных уроках с<br class="br_none br_sm"> преподавателем.<br class="br_none br_lg br_md">
+        Мы<br class="br_none br_sm"> подскажем, как правильно<br class="br_none br_sm"> поставить<br
+          class="br_none br_lg br_md">
+        цели и подберем для<br class="br_none br_sm"> вас идеальный<br class="br_none br_lg br_md">
+        обучающий курс.<br class="br_none br_sm"> Затем вас ждет путь к<br class="br_none br_lg br_md">
+        новым<br class="br_none br_sm"> достижениям!
+      </p>
+      <div class="lf_course-link">
+        <button class="lf_course_link_button" onclick="goToPage3()">Подробнее</button>
+        <div class="lf_course_link_border">
+        </div>
+      </div>
+    </div>
+    <div id="lf_2" class="lf_container">
+      <button id="format2-price" class="price-button">$5</button>
+      <h3>Курсы английского</h3>
+      <p>
+        Курсы английского подходят для<br class="br_none br_sm"> учащихся<br class="br_none br_lg br_md">
+        любого уровня и<br class="br_none br_sm"> предлагают обучение в<br class="br_none br_lg br_md br_sm">
+        небольших группах для более<br class="br_none br_lg br_md br_sm">
+        эффективного взаимодействия<br class="br_none br_sm"> и внимания<br class="br_none br_lg br_md">
+        к каждому студенту.<br class="br_none br_sm"> Программа курсов<br class="br_none br_lg br_md">
+        охватывает<br class="br_none br_sm"> все аспекты языка, включая<br class="br_none br_lg br_md br_sm">
+        грамматику, словарный запас,<br class="br_none br_sm"> разговорную<br class="br_none br_lg br_md">
+        практику и<br class="br_none br_sm"> понимание на слух.
+      </p>
+      <div class="lf_course-link">
+        <button class="lf_course_link_button" onclick="goToPage4()">Подробнее</button>
+        <div class="lf_course_link_border">
+        </div>
+      </div>
+    </div>
+    <div id="lf_3" class="lf_container">
+      <button id="format3-price" class="price-button">$15</button>
+      <h3>Курс интенсив</h3>
+      <p>
+        Интенсивный курс английского<br class="br_none br_sm"> предлагает<br class="br_none br_lg br_md">
+        уникальную<br class="br_none br_sm"> возможность значительно<br class="br_none br_lg br_md br_sm">
+        улучшить уровень владения<br class="br_none br_sm"> языком за<br class="br_none br_lg br_md">
+        короткий период<br class="br_none br_sm"> времени. Наш метод<br class="br_none br_lg br_md br_sm">
+        погружения в языковую среду и<br class="br_none br_sm"> акцент на<br class="br_none br_lg br_md">
+        практическое<br class="br_none br_sm"> применение знаний<br class="br_none br_lg br_md">
+        позволяют<br class="br_none br_sm"> студентам быстро преодолеть<br class="br_none br_lg br_md br_sm">
+        языковой барьер и выйти на<br class="br_none br_sm"> новый<br class="br_none br_lg br_md">
+        уровень владения<br class="br_none br_sm"> английским.
+      </p>
+      <div class="lf_course-link">
+        <button class="lf_course_link_button" onclick="goToPage2()">Подробнее</button>
+        <div class="lf_course_link_border">
+        </div>
+      </div>
+    </div>
+    <div id="lf_4" class="lf_container">
+      <button id="format4-price" class="price-button">от $9 до $20</button>
+      <h3>Занятия для детей</h3>
+      <p>
+        Индивидуальные и групповые<br class="br_none br_sm"> занятия для<br class="br_none br_lg br_md">
+        детей любого<br class="br_none br_sm"> возраста!<br class="br_none br_lg br_md br_sm">
+        Наши занятия - это отличная<br class="br_none br_sm"> возможность<br class="br_none br_lg br_md">
+        изучить язык, не<br class="br_none br_sm"> теряя времени на походы<br class="br_none br_lg br_md">
+        или<br class="br_none br_sm"> поездки в школу. Программы<br class="br_none br_lg br_md br_sm">
+        составлены для разных групп с<br class="br_none br_sm"> учетом<br class="br_none br_lg br_md">
+        возрастных<br class="br_none br_sm"> способностей и уровня<br class="br_none br_lg br_md br_sm">
+        подготовки.</p>
+      <div class="lf_course-link">
+        <button class="lf_course_link_button" onclick="goToPage1()">Подробнее</button>
+        <div class="lf_course_link_border">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Кейсы для SM -->
+<div id="lf_cases_sm" class="ss_container2">
+  <div id="lf_scroll_sm" data-spy="scroll" data-target="#lf_scroll_spy" data-offset="0"
+    class="spy_horizontal_scrollable hs_pad">
+    <div id="lf_1_sm" class="lf_container horizontal_scrollable_item">
+      <button id="format1-price" class="price-button">от $9 до $20</button>
+      <h3>Индивидуальные занятия</h3>
+      <p>
+        Научитесь свободно говорить и<br class="br_none br_sm"> понимать,<br class="br_none br_lg br_md">
+        прокачайте<br class="br_none br_sm"> грамматику английского языка<br class="br_none br_md"> и<br
+          class="br_none br_lg br_sm"> пополните словарный запас на<br class="br_none br_lg br_md br_sm">
+        индивидуальных уроках с<br class="br_none br_sm"> преподавателем.<br class="br_none br_lg br_md">
+        Мы<br class="br_none br_sm"> подскажем, как правильно<br class="br_none br_sm"> поставить<br
+          class="br_none br_lg br_md">
+        цели и подберем для<br class="br_none br_sm"> вас идеальный<br class="br_none br_lg br_md">
+        обучающий курс.<br class="br_none br_sm"> Затем вас ждет путь к<br class="br_none br_lg br_md">
+        новым<br class="br_none br_sm"> достижениям!
+      </p>
+      <div class="lf_course-link">
+        <button class="lf_course_link_button" onclick="goToPage3()">Подробнее</button>
+        <div class="lf_course_link_border">
+        </div>
+      </div>
+    </div>
+    <div id="lf_2_sm" class="lf_container horizontal_scrollable_item">
+      <button id="format2-price" class="price-button">$5</button>
+      <h3>Курсы английского</h3>
+      <p>
+        Курсы английского подходят для<br class="br_none br_sm"> учащихся<br class="br_none br_lg br_md">
+        любого уровня и<br class="br_none br_sm"> предлагают обучение в<br class="br_none br_lg br_md br_sm">
+        небольших группах для более<br class="br_none br_lg br_md br_sm">
+        эффективного взаимодействия<br class="br_none br_sm"> и внимания<br class="br_none br_lg br_md">
+        к каждому студенту.<br class="br_none br_sm"> Программа курсов<br class="br_none br_lg br_md">
+        охватывает<br class="br_none br_sm"> все аспекты языка, включая<br class="br_none br_lg br_md br_sm">
+        грамматику, словарный запас,<br class="br_none br_sm"> разговорную<br class="br_none br_lg br_md">
+        практику и<br class="br_none br_sm"> понимание на слух.
+      </p>
+      <div class="lf_course-link">
+        <button class="lf_course_link_button" onclick="goToPage4()">Подробнее</button>
+        <div class="lf_course_link_border">
+        </div>
+      </div>
+    </div>
+    <div id="lf_3_sm" class="lf_container horizontal_scrollable_item">
+      <button id="format3-price" class="price-button">$15</button>
+      <h3>Курс интенсив</h3>
+      <p>
+        Интенсивный курс английского<br class="br_none br_sm"> предлагает<br class="br_none br_lg br_md">
+        уникальную<br class="br_none br_sm"> возможность значительно<br class="br_none br_lg br_md br_sm">
+        улучшить уровень владения<br class="br_none br_sm"> языком за<br class="br_none br_lg br_md">
+        короткий период<br class="br_none br_sm"> времени. Наш метод<br class="br_none br_lg br_md br_sm">
+        погружения в языковую среду и<br class="br_none br_sm"> акцент на<br class="br_none br_lg br_md">
+        практическое<br class="br_none br_sm"> применение знаний<br class="br_none br_lg br_md">
+        позволяют<br class="br_none br_sm"> студентам быстро преодолеть<br class="br_none br_lg br_md br_sm">
+        языковой барьер и выйти на<br class="br_none br_sm"> новый<br class="br_none br_lg br_md">
+        уровень владения<br class="br_none br_sm"> английским.
+      </p>
+      <div class="lf_course-link">
+        <button class="lf_course_link_button" onclick="goToPage2()">Подробнее</button>
+        <div class="lf_course_link_border">
+        </div>
+      </div>
+    </div>
+    <div id="lf_4_sm" class="lf_container horizontal_scrollable_item">
+      <button id="format4-price" class="price-button">от $9 до $20</button>
+      <h3>Занятия для детей</h3>
+      <p>
+        Индивидуальные и групповые<br class="br_none br_sm"> занятия для<br class="br_none br_lg br_md">
+        детей любого<br class="br_none br_sm"> возраста!<br class="br_none br_lg br_md br_sm">
+        Наши занятия - это отличная<br class="br_none br_sm"> возможность<br class="br_none br_lg br_md">
+        изучить язык, не<br class="br_none br_sm"> теряя времени на походы<br class="br_none br_lg br_md">
+        или<br class="br_none br_sm"> поездки в школу. Программы<br class="br_none br_lg br_md br_sm">
+        составлены для разных групп с<br class="br_none br_sm"> учетом<br class="br_none br_lg br_md">
+        возрастных<br class="br_none br_sm"> способностей и уровня<br class="br_none br_lg br_md br_sm">
+        подготовки.</p>
+      <div class="lf_course-link">
+        <button class="lf_course_link_button" onclick="goToPage1()">Подробнее</button>
+        <div class="lf_course_link_border">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Прокрутка для SM-->
+<div id="lf_scroll_button_line" class="ss_container2">
+  <div class="lf_img_container">
+    <a href="#" role="button" id="lf_scroll_left_sm">
+      <img src="{% static 'img/index/hs_left_arrow.svg' %}">
+    </a>
+  </div>
+  <div id="lf_scroll_spy" class="d-flex">
+    <a href="#lf_1_sm" role="button" class="spy_circle spy_link active"></a>
+    <a href="#lf_2_sm" role="button" class="spy_circle spy_link"></a>
+    <a href="#lf_3_sm" role="button" class="spy_circle spy_link"></a>
+    <a href="#lf_4_sm" role="button" class="spy_circle spy_link"></a>
+  </div>
+  <div class="lf_img_container">
+    <a href="#" role="button" id="lf_scroll_right_sm">
+      <img src="{% static 'img/index/hs_right_arrow.svg' %}">
+    </a>
+  </div>
+</div>
+
+
+<!-- #5 Уникальная методика -->
+
+<!-- Заголовок -->
+<div id="um_header" class="ss_container">
+  <h2>Преимущества <span class="blue-gradient-text">"Уникальной методики"</span></h2>
+  <p>
+    Наша методика изучения английского языка базируется на коммуникативной системе преподавания, что является её
+    ключевым преимуществом. Этот подход позволяет студентам не просто изучать грамматические правила и лексику, но и
+    активно практиковать язык в реальных жизненных ситуациях.
+  </p>
+</div>
+
+<!-- Контент для LG MD -->
+<div id="um_content-lgmd" class="ss_container">
+  <div class="row">
+    <div class="col">
+      <img src="{% static 'img/index/um_content.png' %}">
+    </div>
+    <div id="um_cases" class="col">
+      <div class="row">
+        <div class="col">
+          <img src="{% static 'img/index/um_case1.png' %}">
+        </div>
+        <div class="col">
+          <h3>Коммуникативный подход</h3>
+          <p>
+            Наша методика обучения английскому языку основана на<br> коммуникативной системе, что позволяет ученикам
+            практиковать язык в<br> реальных ситуациях, развивая навыки общения, понимания и<br> произношения.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="{% static 'img/index/um_case2.png' %}">
+        </div>
+        <div class="col">
+          <h3>Полное погружение в языковую среду</h3>
+          <p>
+            Погружение в языковую среду - наш ключ к эффективному обучению.<br> Студенты окружены английским языком, что
+            способствует<br> естественному усвоению и пониманию.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="{% static 'img/index/um_case3.png' %}">
+        </div>
+        <div class="col">
+          <h3>Активное использование языка</h3>
+          <p>
+            Студенты не просто изучают, они активно используют английский язык,<br> участвуя в дискуссиях, проектах и
+            ролевых играх, что улучшает их<br> языковые навыки.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="{% static 'img/index/um_case4.png' %}">
+        </div>
+        <div class="col">
+          <h3>Современные образовательные технологии</h3>
+          <p>
+            Мы интегрируем современные образовательные технологии в процесс<br> обучения, включая мультимедийные
+            материалы и интерактивные<br> платформы, для обогащения опыта обучения.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="{% static 'img/index/um_case5.png' %}">
+        </div>
+        <div class="col">
+          <h3>Индивидуальный подход</h3>
+          <p>Индивидуальный подход к каждому студенту гарантирует, что учебная<br> программа адаптируется под личные
+            нужды и скорость обучения,<br> максимизируя эффективность обучения.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Контент для SM -->
+<div id="um_content-sm" class="ss_container2">
+
+  <img src="{% static 'img/index/um_content.png' %}">
+
+  <div id="um_cases">
+    <!-- Прокрутка -->
+    <div id="um_scroll_buttons">
+      <div class="um_img_container">
+        <a href="#" role="button" id="um_scroll_left_sm">
+          <img src="{% static 'img/index/hs_left_arrow.svg' %}">
+        </a>
+      </div>
+      <div class="um_img_container">
+        <a href="#" role="button" id="um_scroll_right_sm">
+          <img src="{% static 'img/index/hs_right_arrow.svg' %}">
+        </a>
+      </div>
+    </div>
+
+    <!-- Кейсы -->
+    <div id="um_scroll_sm" data-spy="scroll" data-target="#um_scroll_spy" data-offset="0"
+      class="spy_horizontal_scrollable hs_pad">
+      <div id="um_1_sm" class="um_container horizontal_scrollable_item">
+        <div class="row">
+          <img src="{% static 'img/index/um_case1_sm.png' %}">
+        </div>
+        <div class="row">
+          <h3>Коммуникативный подход</h3>
+          <p>
+            Наша методика обучения английскому языку основана на коммуникативной системе, что позволяет ученикам
+            практиковать язык в реальных ситуациях, развивая навыки общения, понимания и произношения.
+          </p>
+        </div>
+      </div>
+      <div id="um_2_sm" class="um_container horizontal_scrollable_item">
+        <div class="row">
+          <img src="{% static 'img/index/um_case2_sm.png' %}">
+        </div>
+        <div class="row">
+          <h3>Полное погружение в языковую среду</h3>
+          <p>
+            Погружение в языковую среду - наш ключ к эффективному обучению. Студенты окружены английским языком, что
+            способствует естественному усвоению и пониманию.
+          </p>
+        </div>
+      </div>
+      <div id="um_3_sm" class="um_container horizontal_scrollable_item">
+        <div class="row">
+          <img src="{% static 'img/index/um_case3_sm.png' %}">
+        </div>
+        <div class="row">
+          <h3>Активное использование языка</h3>
+          <p>
+            Студенты не просто изучают, они активно используют английский язык, участвуя в дискуссиях, проектах и
+            ролевых играх, что улучшает их языковые навыки.
+          </p>
+        </div>
+      </div>
+      <div id="um_4_sm" class="um_container horizontal_scrollable_item">
+        <div class="row">
+          <img src="{% static 'img/index/um_case4_sm.png' %}">
+        </div>
+        <div class="row">
+          <h3>Современные образовательные технологии</h3>
+          <p>
+            Мы интегрируем современные образовательные технологии в процесс обучения, включая мультимедийные
+            материалы и интерактивные платформы, для обогащения опыта обучения.
+          </p>
+        </div>
+      </div>
+      <div id="um_5_sm" class="um_container horizontal_scrollable_item">
+        <div class="row">
+          <img src="{% static 'img/index/um_case5_sm.png' %}">
+        </div>
+        <div class="row">
+          <h3>Индивидуальный подход</h3>
+          <p>Индивидуальный подход к каждому студенту гарантирует, что учебная программа адаптируется под личные
+            нужды и скорость обучения, максимизируя эффективность обучения.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Отслеживание прокрутки -->
+    <div id="um_scroll_spy">
+      <a href="#um_1_sm" role="button" class="spy_circle spy_link active"></a>
+      <a href="#um_2_sm" role="button" class="spy_circle spy_link"></a>
+      <a href="#um_3_sm" role="button" class="spy_circle spy_link"></a>
+      <a href="#um_4_sm" role="button" class="spy_circle spy_link"></a>
+      <a href="#um_5_sm" role="button" class="spy_circle spy_link"></a>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- #6 Преподаватели -->
+
+<!-- Заголовок -->
+<div id="tr_header" class="ss_container">
+  <h2>Наши <span class="blue-gradient-text">преподаватели</span></h2>
+  <p>
+    Наши опытные наставники готовы подарить вам увлекательное погружение в мир английского, делая обучение легким,
+    интересным и результативным
+  </p>
+</div>
+
+<!-- Контент -->
+<div id="tr_cases" class="ss_container2">
+  <!-- LG MD -->
+  <div id="tr_content_lg_md" class="horizontal_scrollable hs_pad">
+    <div id="teacher1" class="tr_container">
+      <img src="{% static 'img/index/tr_Teacher1.jpg' %}">
+      <div class="tr_text">
+        <h2>Екатерина Круглик</h2>
+        <h3>Преподаватель</h3>
+        <p>Со мной ты полюбишь Английский! Считаю, что благодаря сериалам в оригинале можно лучше понять английскую
+          речь
+          и улучшить не только свой словарный запас, но и произношение. Поэтому активно применяю эту методику в
+          занятиях.</p>
+      </div>
+    </div>
+    <div id="teacher2" class="tr_container">
+      <img src="{% static 'img/index/tr_Teacher2.jpg' %}">
+      <div class="tr_text">
+        <h2>Илона Манчак</h2>
+        <h3>Основатель SpeakSwift, Преподаватель</h3>
+        <p>Помимо моей большой любви к преподаванию английского, моя любовь к путешествиям дополняет методику
+          обучения, так что я действительно знаю что такое РЕАЛЬНЫЙ АНГЛИЙСКИЙ, делая уроки увлекательными и
+          практичными. Мои студенты ценят не только экспертность, но и энтузиазм, с которым подхожу к преподаванию.
+        </p>
+      </div>
+    </div>
+    <div id="teacher3" class="tr_container">
+      <img src="{% static 'img/index/tr_Teacher3.jpg' %}">
+      <div class="tr_text">
+        <h2>Арина Предченко</h2>
+        <h3>Преподаватель</h3>
+        <p>Мой приоритет в работе помочь ученикам поверить в свои силы и достичь желаемых результатов. Я уделяю равное
+          внимание всем аспектам языка. Искренне считаю, что изучая иностранный язык, мы лучше узнаем и совершенствуем
+          себя</p>
+      </div>
+    </div>
+  </div>
+  <!-- SM -->
+  <div id="tr_content_sm" class="horizontal_scrollable hs_pad">
+    <div id="teacher1_sm" class="tr_container">
+      <div class="row">
+        <img src="{% static 'img/index/tr_Teacher1_sm.jpg' %}">
+        <div class="col">
+          <h2>Илона Манчак</h2>
+          <h3>Основатель SpeakSwift, Преподаватель</h3>
+        </div>
+      </div>
+      <p>
+        Помимо моей большой<br> любви к преподаванию<br> английского, моя любовь к<br> путешествиям дополняет<br>
+        методику обучения,
+        так что я<br> действительно знаю что<br> такое РЕАЛЬНЫЙ<br> АНГЛИЙСКИЙ, делая уроки<br> увлекательными и<br>
+        практичными. Мои
+        студенты<br> ценят не только экспертность,<br> но и энтузиазм, с которым<br> подхожу к преподаванию.
+      </p>
+    </div>
+    <div id="teacher2_sm" class="tr_container">
+      <div class="row">
+        <img src="{% static 'img/index/tr_Teacher2_sm.jpg' %}">
+        <div class="col">
+          <h2>Екатерина Круглик</h2>
+          <h3>Преподаватель</h3>
+        </div>
+      </div>
+      <p>Со мной ты полюбишь Английский! Считаю, что благодаря сериалам в оригинале можно лучше понять английскую
+        речь
+        и улучшить не только свой словарный запас, но и произношение. Поэтому активно применяю эту методику в
+        занятиях.</p>
+    </div>
+    <div id="teacher3_sm" class="tr_container">
+      <div class="row">
+        <img src="{% static 'img/index/tr_Teacher3_sm.jpg' %}">
+        <div class="col">
+          <h2>Арина Предченко</h2>
+          <h3>Преподаватель</h3>
+        </div>
+      </div>
+      <p>
+        Мой приоритет в работе <br>помочь ученикам поверить в<br> свои силы и достичь<br> желаемых результатов. Я<br>
+        уделяю равное внимание<br> всем аспектам языка.<br> Искренне считаю, что изучая<br> иностранный язык, мы
+        лучше<br> узнаем и совершенствуем<br> себя
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- #7 Приглашение пройти тест -->
+<div id="ti_invite" class="ss_container">
+  <h2>Онлайн-тест<br> английского языка</h2>
+  <p>
+    Прохождение теста английского - это<br class="br_none br_sm"> не<br class="br_none br_md"> только оценка вашего
+    уровня<br class="br_none br_lg br_sm"> владения<br class="br_none br_md"> языком. Это возможность<br
+      class="br_none br_sm"> для вас и для<br class="br_none br_md">
+    вашего наставника<br class="br_none br_lg br_sm"> понять ваши сильные и<br class="br_none br_md"> слабые<br
+      class="br_none br_sm"> стороны. Это начало вашего<br> путешествия к владению<br class="br_none br_sm">
+    английским<br class="br_none br_md"> языком.
+  </p>
+  <div class="ti_test_link">
+    <button class="ti_test_link_button" onclick="goToPage5()">Подробнее</button>
+    <div class="ti_test_link_border">
+    </div>
+  </div>
+</div>
+
+
+<!-- #8 Отзывы -->
+
+<!-- Заголовок -->
+<div id="rs_header" class="ss_container">
+  <h2>Отзывы наших <span class="blue-gradient-text">учеников</span></h2>
+  <p>
+    Узнайте, что говорят наши<br class="br_none br_sm"> довольные ученики! Погрузитесь в<br class="br_none br_sm"> их<br
+      class="br_none br_md"> впечатления о нашей онлайн-<br class="br_none br_sm">школе английского языка и
+    узнайте,<br class="br_none br_sm"> как они<br class="br_none br_lg br_md"> достигли своих языковых<br
+      class="br_none br_sm"> целей, благодаря качественному<br class="br_none br_sm"> обучению и<br
+      class="br_none br_md"> поддержке нашей<br class="br_none br_sm"> команды
+    преподавателей.
+  </p>
+</div>
+
+<!-- Контент -->
+<div id="rs_cases" class="ss_container2">
+  <div class="horizontal_scrollable hs_pad">
+  </div>
+</div>
+{% endblock %}
+
+{% block ss-scripts %}
+<script src="{% static 'js/index/horizontal_scroll_buttons.js' %}"></script>
+<script src="{% static 'js/index/horizontal_scroll_spy.js' %}"></script>
+
+
+{% endblock %}

@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block meta_description %}Главная старница{% endblock %}
+
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/pages/index/_vars-index.css' %}?v={{ VERSION }}">
+<!-- Стили для экранов до 575px -->
+<link rel="stylesheet" href="{% static 'css/pages/index/_build-index-sm.css' %}?v={{ VERSION }}" media="only screen and (max-width: 575px)">
+<!-- Стили для экранов от 576px до 991px -->
+<link rel="stylesheet" href="{% static 'css/pages/index/_build-index-md.css' %}?v={{ VERSION }}"
+
+  media="only screen and (min-width: 576px) and (max-width: 991px)">
+<!-- Стили для экранов больше 992px -->
+<link rel="stylesheet" href="{% static 'css/pages/index/_build-index-lg.css' %}?v={{ VERSION }}" media="only screen and (min-width: 992px)">
+{% endblock %}
+
+
+{% block main %}
+<!-- #1 Первый экран -->
+<div id="was" class="ss_container"></div>
+
+
+<!-- #2 Кому подходит обучение -->
+<div id="wc">
+</div>
+
+<!-- #3 Девочка на стуле -->
+<div id="cg" class="ss_container"></div>
+
+<!-- #4 Форматы занятий -->
+<div id="lf"></div>
+
+<!-- #5 Уникальная методика -->
+<div id="um"></div>
+
+<!-- #6 Преподаватели -->
+<div id="tr"></div>
+
+<!-- #7 Приглашение пройти тест -->
+<div id="ti"></div>
+
+<!-- #8 Отзывы -->
+<div id="rs"></div>
+
+{% endblock %}
+
+
+{% block scripts-after %}
+<script>
+  const width = window.innerWidth;
+
+  let initialContentUrl;
+  let additionalContentUrl;
+
+  if (width <= 575) {
+    initialContentUrl = "{% url 'index-mobile' %}";
+    additionalContentUrl = "{% url 'index-mobile-additional' %}";
+  } else if (width >= 576 && width <= 991) {
+    initialContentUrl = "{% url 'index-tablet' %}";
+    additionalContentUrl = "{% url 'index-tablet-additional' %}";
+  } else {
+    initialContentUrl = "{% url 'index-desktop' %}";
+    additionalContentUrl = "{% url 'index-desktop-additional' %}";
+  }
+
+  // Загружаем начальный контент в зависимости от ширины окна
+  fetch(initialContentUrl)
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('was').innerHTML = data.was;
+      document.getElementById('wc').innerHTML = data.wc;
+      document.getElementById('cg').innerHTML = data.cg;
+      document.getElementById('lf').innerHTML = data.lf;
+      document.getElementById('um').innerHTML = data.um_core;
+      document.getElementById('um').insertAdjacentHTML('beforeend', data.um);
+      document.getElementById('tr').innerHTML = data.tr_core;
+      document.getElementById('tr_cases').insertAdjacentHTML('beforeend', data.tr);
+      document.getElementById('ti').innerHTML = data.ti;
+      document.getElementById('rs').innerHTML = data.rs;
+    })
+    .then(() => {
+      // Подгрузка контента для других разрешений
+      return fetch(additionalContentUrl)
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('lf').insertAdjacentHTML('beforeend', data.lf);
+          document.getElementById('um').insertAdjacentHTML('beforeend', data.um);
+          document.getElementById('tr_cases').insertAdjacentHTML('beforeend', data.tr);
+        });
+    })
+    .then(() => {
+      // Динамическая загрузка скриптов после завершения fetch
+      const script1 = document.createElement('script');
+      script1.src = "{% static 'js/index/horizontal_scroll_buttons.js' %}";
+      script1.onload = () => {
+        if (typeof initHorizontalScrollButtons === 'function') {
+          initHorizontalScrollButtons();
+        }
+      };
+      document.body.appendChild(script1);
+
+      const script2 = document.createElement('script');
+      script2.src = "{% static 'js/index/horizontal_scroll_spy.js' %}";
+      script2.onload = () => {
+        if (typeof initHorizontalScrollSpy === 'function') {
+          initHorizontalScrollSpy();
+        }
+      };
+      document.body.appendChild(script2);
+    });
+</script>
+
+<script src="{% static 'js/courses/courses_scroll_buttons.js' %}?v={{ VERSION }}"></script>
+<script src="{% static 'js/index/horizontal_scroll_spy.js' %}?v={{ VERSION }}"></script>
+
+<script>
+  function goToPage1() {
+    window.location.href = "{% url 'course1' %}";
+  }
+  function goToPage2() {
+    window.location.href = "{% url 'course2' %}";
+  }
+  function goToPage3() {
+    window.location.href = "{% url 'course3' %}";
+  }
+  function goToPage4() {
+    window.location.href = "{% url 'course4' %}";
+  }
+  function goToPage5() {
+    window.location.href = "{% url 'test1' %}";
+  }
+</script>
+{% endblock %}

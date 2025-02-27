@@ -1,0 +1,41 @@
+{% csrf_token %}
+<input type="hidden" name="form_id" value="call2assForm">
+
+<div class="form-group">
+  <input type="text" id="name" name="Имя" class="form-control" placeholder="Введите ваше имя" required>
+</div>
+
+<div class="form-group">
+  <select class="form-control" id="levelSelect" name="Уровень" required>
+    <option value="" hidden>Текущий уровень владения языком</option>
+    <option value="A0">A0 (Beginner)</option>
+    <option value="A1">A1 (Elementary)</option>
+    <option value="A2">A2 (Pre-Intermediate)</option>
+    <option value="B1">B1 (Intermediate)</option>
+    <option value="B2">B2 (Upper-Intermediate)</option>
+    <option value="C1">C1 (Advanced)</option>
+    <option value="C2">C2 (Proficiency)</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <select class="form-control" id="courseSelect" name="На курс" required>
+    <option value="" hidden>Какой курс вас интересует?</option>
+    <option value="Индивидуальные занятия">Индивидуальные занятия</option>
+    <option value="Курсы английского">Курсы английского</option>
+    <option value="Курс интенсив">Курс интенсив</option>
+    <option value="Занятия для детей">Занятия для детей</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <div class="row">
+    <select class="form-control" id="contactType" name="Способ связи" required>
+      <option value="" hidden>Способ связи</option>
+      <option value="Telegram">Telegram</option>
+      <option value="WhatsApp">WhatsApp</option>
+      <option value="Viber">Viber</option>
+    </select>
+    <input class="form-control w-50 ms-4" type="text" id="contact" name="Контакт" placeholder="" required>
+  </div>
+</div>

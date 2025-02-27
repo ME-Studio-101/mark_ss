@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="{% block meta_description %}{% endblock %}">
+  <title>SpeakSwift</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="{% static 'css/_build-core.css' %}">
+
+  <!-- Core CSS для экранов до 575px -->
+  <link rel="stylesheet" href="{% static 'css/core-sm.css' %}" media="only screen and (max-width: 575px)">
+  <!-- Core CSS для экранов от 576px до 991px -->
+  <link rel="stylesheet" href="{% static 'css/core-md.css' %}"
+    media="only screen and (min-width: 576px) and (max-width: 991px)">
+  <!-- Core CSS для экранов больше 992px -->
+  <link rel="stylesheet" href="{% static 'css/core-lg.css' %}" media="only screen and (min-width: 992px)">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="{% static 'js/crutches/initial_scaler.js' %}"></script>
+
+  {% block styles %}{% endblock %}
+</head>
+
+<body>
+  <script src="{% static 'js/index/horizontal_dynamic_width.js' %}"></script>
+
+  <header id="header" class="test-shadow">
+    {% include "includes/header.html" %}
+  </header>
+
+  <main>
+    {% block main %}{% endblock %}
+  </main>
+
+  <footer>
+    {% include "includes/footer.html" %}
+  </footer>
+
+  <!-- Модалки -->
+  {% include "includes/enrollModal.html" %}
+
+  <script src="{% static 'js/crutches/target-link.js' %}"></script>
+  <script src="{% static 'js/engine/bootstrap.bundle.min.js' %}"></script>
+
+  <script src="{% static 'js/forms/courses_enrollForm.js' %}"></script>
+
+  {% block scripts-after %}{% endblock %}
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+footer .ss_container {
+    background-color: #26272b;
+    padding: 45px 80px 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+    border-radius: 20px 20px 0 0;
+}
+
+footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5
+}
+
+footer hr.small {
+    margin: 20px 0
+}
+
+footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px
+}
+
+footer a {
+    color: #737373;
+}
+
+footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none
+}
+
+.footer-links li {
+    display: block
+}
+
+.footer-links a {
+    color: #737373
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+footer .social-icons a {
+    display: flex;
+    /* Устанавливает flex-контейнер */
+    justify-content: center;
+    /* Центрирует содержимое по горизонтали */
+    align-items: center;
+    /* Центрирует содержимое по вертикали */
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 0;
+    margin-right: 12px;
+    border-radius: 100%;
+    background-color: var(--skeleton-bg);
+}
+
+footer .social-icons a img {
+    width: 64px;
+    /* Устанавливает ширину изображения */
+    height: 64px;
+    /* Устанавливает высоту изображения */
+}
+
+
+@media (max-width:991px) {
+    footer .ss_container [class^=col-] {
+        margin-bottom: 30px
+    }
+}
+
+@media (max-width:767px) {
+    footer .ss_container {
+        padding-bottom: 0
+    }
+}
+
+@media (max-width:575px) {
+
+    .copyright-text,
+    .social-icons {
+        text-align: center
+    }
+
+    footer .social-icons li:last-child a {
+        margin-right: 0;
+    }
+
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+}

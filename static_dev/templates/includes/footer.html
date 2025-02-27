@@ -1,0 +1,50 @@
+{% load static %}
+
+  <div class="ss_container">
+    <div class="row">
+
+      <div class="col-lg-6 col-12">
+        <h6>О нас</h6>
+        <p class="text-justify">Мы предлагаем лучшие курсы английского языка для всех возрастов и уровней.</p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <h6>Контакты</h6>
+        <ul class="footer-links">
+          <!-- <li><a href="tel:+71234567890" id="contactPhone2">+7 (123) 456-78-90</a></li> -->
+          <li><a
+              href="mailto:info@example.com?subject=Вопрос%20по%20курсам&body=Здравствуйте,%20у%20меня%20есть%20вопрос%20по%20вашим%20курсам."
+              id="contactEmail">ilonamancha@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <h6>Быстрые ссылки</h6>
+        <ul class="footer-links">
+          <li><a href="{% url 'index' %}">Главная</a></li>
+          <li><a href="{% url 'about' %}">О нас</a></li>
+          <li><a href="#" data-bs-toggle="modal" data-bs-target="#enrollModal">Связаться с нами</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <hr>
+    <div class="row">
+
+      <div class="col-lg-10 col-md-8 col-sm-8 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2024<br> All Rights Reserved by
+          <a href="#">Speakswift, Inc</a>.
+        </p>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+        <ul class="social-icons">
+          <!-- <li><a href="#"><img src="{% static 'img/core/footer_link-instagram.png' %}" alt="Instagram"></a>
+          </li>
+          <li><a href="#"><img src="{% static 'img/core/footer_link-whatsapp.png' %}" alt="Whatsapp"></a></li> -->
+          <li><a href="https://t.me/speakswift" target="_blank" rel="noopener noreferrer"><img src="{% static 'img/core/footer_link-telegram.png' %}" alt="Telegram"></a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>

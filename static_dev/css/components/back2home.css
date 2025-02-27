@@ -1,0 +1,22 @@
+
+.back2home a {
+    display: flex;
+    align-items: center;
+    font-family: Lato-Medium;
+    font-size: 17px;
+    color: #333;
+}
+
+.back2home a img {
+    height: 47%;
+    margin-right: 6px;
+}
+
+@media (max-width: 575px) {
+    .back2home a {
+        font-size: 28.8px;
+    }
+    .back2home a img {
+        margin-right: 10.8px;
+    }
+}

@@ -1,0 +1,528 @@
+:root {
+    --black_main_color: #333;
+    --black_submain_color: #676767;
+    
+    --header_main_color: #333;
+    --header_main_color_07: #303030BF;
+    --header_logo-color: #3ec5e1;
+
+    --header_hover_element-color: #3ec5e1;
+    --header_brand-color: #3ec5e1;
+
+    /* Цвет иконок в навигации */
+    --nav_icons-color: #303030;
+}
+
+body {
+    background-color: #fff;
+}
+
+/* LG */
+@media (min-width: 991px) {
+    :root {
+        /* Цвет отслеживателей прокрутки */
+        --spy_circles_color: #3EC5E1;
+
+        /* ABABA */
+
+        /* Размеры элементов */
+        --ababa-w: 648px;
+        --ababa-h: 444px;
+
+        --ababa_image-w: 600px;
+        --ababa_image-h: 380px;
+        --ababa_image_img-w: 592px;
+        --ababa_image_img-h: 592px;
+
+        /* Отступы контейнера */
+        --ababa-mt: 128px;
+        --ababa-mb: 64px;
+        --ababa-pt: 32px;
+        --ababa-pb: 32px;
+
+        /* Отступы контента */
+        --ababa_baskrefix_img-mr: 6px;
+        --ababa_baskrefix-mt: 37.5px;
+
+        --ababa_h2-mt: 16px;
+
+        --ababa_image-mt: 0;
+
+        --ababa_p-mt: 16px;
+
+        --ababa_image-top: -55px;
+
+        /* Типография */
+        --ababa_h2-fst: Lato-Bold;
+        --ababa_h2-fsz: 40px;
+        --gradient_text-gradient: linear-gradient(to right, #4284DB, #29EAC4);
+
+        --ababa_p-fst: Lato-Regular;
+        --ababa_p-fsz: 18px;
+
+        --ababa_p_span-fst: Lato-Bold;
+        --ababa_p_span-fsz: 18px;
+
+        /* Респонсив расположение Image #ababa_image */
+        --ababa_p-order: 0;
+
+        /* */
+
+
+        /* About Carousel */
+
+        /* Размеры элементов */
+        --abaca_case-h: 528px;
+
+        --abaca_aplica-w: 400px;
+        --abaca_aplica-h: 400px;
+
+        --abaca_aplica_in-w: 205px;
+        --abaca_aplica_in-h: 129px;
+
+        --abaca_content-max_w: 533px;
+
+        /* Отступы контейнера */
+        --abaca_case-py: 64px;
+        --abaca_case-px: 82px;
+
+        /* Отступы контента */
+        --abaca_aplica-mr: 163px;
+        --abaca_h3-mt: 57.5px;
+        --abaca_h2-mt: 8px;
+        --abaca_p-mt: 16px;
+
+        /* Типография */
+        --abaca_h3_fst: Lato-Bold;
+        --abaca_h3_fsz: 18px;
+
+        --abaca_h2_fst: Lato-Bold;
+        --abaca_h2_fsz: 24px;
+
+        --abaca_p_fst: Lato-Regular;
+        --abaca_p_fsz: 18px;
+
+        /* */
+
+
+        /* ABAWY */
+
+        /* Размеры элементов */
+        --abawy_case-w: 624px;
+        --abawy_case-h: 308px;
+
+        --abawy_image-wh: 70px;
+
+        /* Отступы контейнера */
+        --abawy-mt: 96px;
+
+        /* Отступы контента */
+        --abawy_case-mt: 32px;
+        --abawy_case-p: 32px;
+
+        --abawy_case_h3-mt: 16px;
+        --abawy_case_p-mt: 8px;
+
+
+        /* Типография */
+        --abawy_case-border_radius: 32px;
+        --abawy_case_image-border_radius: 24px;
+
+        --abawy_header-fst: Lato-Bold;
+        --abawy_header-fsz: 40px;
+
+        --abawy_case_h3-fst: Lato-Bold;
+        --abawy_case_h3-fsz: 20px;
+
+        --abawy_case_p-fst: Lato-Regular;
+        --abawy_case_p-fsz: 16px;
+
+        /* */
+
+
+        /* ABAC2U */
+        
+        /* Размеры элементов */
+        --abac2u-w: 1280px;
+        --abac2u-h: 385px;
+
+        --abac2u_image-w: 530px;
+        
+        --abac2u_button-w: 300px;
+        --abac2u_button-h: 66px;
+        
+        /* Расположение элементов */
+        --abac2u_image-pos: 33px;
+
+        /* Отступы контейнера */
+        --abac2u-mt: 128px;
+        --abac2u-mb: 64px;
+
+        /* Отступы контента */
+        --abac2u_content-pt: 64px;
+        --abac2u_content-pl: 590px;
+        --abac2u_content-pr: 80px;
+        
+        --abac2u_p-mt: 0;
+        --abac2u_btn-mt: 32px;
+
+        /* Типография */
+        --abac2u_h2-fst: Lato-Bold;
+        --abac2u_h2-fsz: 44px;
+        
+        --abac2u_p-fst: Lato-SemiBold;
+        --abac2u_p-fsz: 18px;
+        
+        --abac2u_btn-fst: Lato-Bold;
+        --abac2u_btn-fsz: 17px;
+        /* */
+    }
+}
+
+
+/* MD */
+@media (min-width: 576px) and (max-width: 991px) {
+    :root {
+        /* Цвет отслеживателей прокрутки */
+        --spy_circles_color: #3EC5E1;
+
+        /* ABABA */
+        /* Размеры элементов */
+        --ababa-w: 100%;
+        --ababa-h: 803px;
+
+        --ababa_image-w: 688px;
+        --ababa_image-h: 435px;
+        --ababa_image_img-w: 678.83px;
+        --ababa_image_img-h: 677.68px;
+
+        /* Отступы контейнера */
+        --ababa-mt: 104px;
+        --ababa-mb: 0;
+        --ababa-pt: 32px;
+        --ababa-pb: 32px;
+
+        /* Отступы контента */
+        --ababa_baskrefix_img-mr: 6px;
+        --ababa_baskrefix-mt: 0;
+
+        --ababa_h2-mt: 16px;
+
+        --ababa_image-mt: 16px;
+
+        --ababa_p-mt: 24px;
+
+        --ababa_image-top: -62.96px;
+
+        /* Типография */
+        --ababa_h2-fst: Lato-Bold;
+        --ababa_h2-fsz: 40px;
+        --gradient_text-gradient: linear-gradient(to right, #4284DB, #29EAC4);
+
+        --ababa_p-fst: Lato-Regular;
+        --ababa_p-fsz: 18px;
+
+        --ababa_p_span-fst: Lato-Bold;
+        --ababa_p_span-fsz: 18px;
+
+        /* Респонсив расположение Image #ababa_image */
+        --ababa_p-order: 10;
+        /* */
+
+
+        /* About Carousel */
+
+        /* Размеры элементов */
+        --abaca_case-h: 763px;
+
+        --abaca_aplica-w: 685px;
+        --abaca_aplica-h: 400px;
+
+        --abaca_aplica_in-w: 205px;
+        --abaca_aplica_in-h: 129px;
+
+        --abaca_content-max_w: 100%;
+
+        /* Отступы контейнера */
+        --abaca_case-py: 44px;
+        --abaca_case-px: 43px;
+
+        /* Отступы контента */
+        --abaca_aplica-mr: 0;
+        --abaca_h3-mt: 32px;
+        --abaca_h2-mt: 8px;
+        --abaca_p-mt: 16px;
+
+        /* Типография */
+        --abaca_h3_fst: Lato-Bold;
+        --abaca_h3_fsz: 18px;
+
+        --abaca_h2_fst: Lato-Bold;
+        --abaca_h2_fsz: 24px;
+
+        --abaca_p_fst: Lato-Regular;
+        --abaca_p_fsz: 18px;
+
+        /* Респонсив */
+        --abaca_aplica_in-pad2border: 20px;
+
+
+        /* ABAWY */
+
+        /* Размеры элементов */
+        --abawy_case-w: 328px;
+        --abawy_case-h: 452px;
+
+        --abawy_image-wh: 70px;
+
+        /* Отступы контейнера */
+        --abawy-mt: 44px;
+
+        /* Отступы контента */
+        --abawy_case-mt: 32px;
+        --abawy_case-p: 32px;
+
+        --abawy_case_h3-mt: 16px;
+        --abawy_case_p-mt: 8px;
+
+
+        /* Типография */
+        --abawy_case-border_radius: 32px;
+        --abawy_case_image-border_radius: 24px;
+
+        --abawy_header-fst: Lato-Bold;
+        --abawy_header-fsz: 40px;
+
+        --abawy_case_h3-fst: Lato-Bold;
+        --abawy_case_h3-fsz: 20px;
+
+        --abawy_case_p-fst: Lato-Regular;
+        --abawy_case_p-fsz: 16px;
+
+        /* */
+
+
+        /* ABAC2U */
+        
+        /* Размеры элементов */
+        --abac2u-w: 100%;
+        --abac2u-h: 677px;
+
+        --abac2u_image-w: 500px;
+        
+        --abac2u_button-w: 300px;
+        --abac2u_button-h: 66px;
+        
+        /* Расположение элементов */
+        --abac2u_image-pos: top 44px center;
+
+        /* Отступы контейнера */
+        --abac2u-mt: 88px;
+        --abac2u-mb: 44px;
+
+        /* Отступы контента */
+        --abac2u_content-pt: 376px;
+        --abac2u_content-pl: 32px;
+        --abac2u_content-pr: 32px;
+        
+        --abac2u_p-mt: 12px;
+        --abac2u_btn-mt: 32px;
+
+        /* Типография */
+        --abac2u_h2-fst: Lato-Bold;
+        --abac2u_h2-fsz: 44px;
+        
+        --abac2u_p-fst: Lato-SemiBold;
+        --abac2u_p-fsz: 18px;
+        
+        --abac2u_btn-fst: Lato-Bold;
+        --abac2u_btn-fsz: 17px;
+        /* */
+    }
+}
+
+
+/* SM */
+@media (max-width: 575px) {
+    :root {
+        /* Цвет отслеживателей прокрутки */
+        --spy_circles_color: #3EC5E1;
+
+        /* ABABA */
+        /* Размеры элементов */
+        --ababa-w: 100%;
+        --ababa-h: 1195.2px;
+
+        --ababa_image-w: 522px;
+        --ababa_image-h: 331px;
+        --ababa_image_img-w: 515px;
+        --ababa_image_img-h: 515px;
+
+        /* Отступы контейнера */
+        --ababa-mt: 112px;
+        --ababa-mb: 0;
+        --ababa-pt: 28.8px;
+        --ababa-pb: 57.6px;
+
+        /* Отступы контента */
+        --ababa_baskrefix_img-mr: 10.8px;
+        --ababa_baskrefix-mt: 0;
+
+        --ababa_h2-mt: 14.4px;
+
+        --ababa_image-mt: 28.8px;
+
+        --ababa_p-mt: 21.6px;
+
+        --ababa_image-top: -47.844px;
+
+        /* Типография */
+
+        --ababa_h2-fst: Lato-Bold;
+        --ababa_h2-fsz: 43.2px;
+        --gradient_text-gradient: linear-gradient(to right, #4284DB, #29EAC4);
+
+        --ababa_p-fst: Lato-Regular;
+        --ababa_p-fsz: 28.8px;
+
+        --ababa_p_span-fst: Lato-Bold;
+        --ababa_p_span-fsz: 30.6px;
+
+        /* Респонсив расположение Image #ababa_image */
+        --ababa_p-order: 10;
+        /* */
+
+
+        /* About Carousel */
+
+        /* Размеры элементов */
+        --abaca_case-h: 1293px;
+
+        --abaca_aplica-w: 522px;
+        --abaca_aplica-h: 522px;
+
+        --abaca_aplica_in-w: 214.2px;
+        --abaca_aplica_in-h: 135px;
+
+        --abaca_content-max_w: 100%;
+
+        /* Отступы контейнера */
+        --abaca_case-py: 57.6px;
+        --abaca_case-px: 27px;
+
+        /* Отступы контента */
+        --abaca_aplica-mr: 0;
+        --abaca_h3-mt: 21.6px;
+        --abaca_h2-mt: 14.4px;
+        --abaca_p-mt: 28.8px;
+
+        /* Типография */
+        --abaca_h3_fst: Lato-Bold;
+        --abaca_h3_fsz: 25.2px;
+
+        --abaca_h2_fst: Lato-Bold;
+        --abaca_h2_fsz: 36px;
+
+        --abaca_p_fst: Lato-Regular;
+        --abaca_p_fsz: 28.8px;
+
+        /* Респонсив */
+        --abaca_aplica_in-pad2border: 18px;
+
+        
+        /* ABAWY */
+
+        /* Размеры элементов */
+        --abawy_case-w: 486px;
+        --abawy_case-h: 842.4px;
+
+        --abawy_image-wh: 126px;
+
+        /* Отступы контейнера */
+        --abawy-mt: 75.2px;
+
+        /* Отступы контента */
+        --abawy_case-mt: 28.8px;
+        --abawy_case-p: 28.8px;
+
+        --abawy_case_h3-mt: 28.8px;
+        --abawy_case_p-mt: 14.4px;
+
+
+        /* Типография */
+        --abawy_case-border_radius: 57.6px;
+        --abawy_case_image-border_radius: 43.2px;
+
+        --abawy_header-fst: Lato-Bold;
+        --abawy_header-fsz: 43.2px;
+
+        --abawy_case_h3-fst: Lato-Bold;
+        --abawy_case_h3-fsz: 36px;
+
+        --abawy_case_p-fst: Lato-Regular;
+        --abawy_case_p-fsz: 30.6px;
+        /* */
+
+
+        /* ABAC2U */
+        
+        /* Размеры элементов */
+        --abac2u-w: 100%;
+        --abac2u-h: 928.8px;
+
+        --abac2u_image-w: 464.4px;
+        
+        --abac2u_button-w: 100%;
+        --abac2u_button-h: 100.8px;
+        
+        /* Расположение элементов */
+        --abac2u_image-pos: top 28.8px center;
+
+        /* Отступы контейнера */
+        --abac2u-mt: 115.2px;
+        --abac2u-mb: 57.6px;
+
+        /* Отступы контента */
+        --abac2u_content-pt: 345.6px;
+        --abac2u_content-pl: 28.8px;
+        --abac2u_content-pr: 28.8px;
+        
+        --abac2u_p-mt: 21.6px;
+        --abac2u_btn-mt: 57.6px;
+
+        /* Типография */
+        --abac2u_h2-fst: Lato-Bold;
+        --abac2u_h2-fsz: 43.2px;
+        
+        --abac2u_p-fst: Lato-Medium;
+        --abac2u_p-fsz: 28.8px;
+        
+        --abac2u_btn-fst: Lato-Bold;
+        --abac2u_btn-fsz: 28.8px;
+        /* */
+    }
+}
+
+
+/* Buttons */
+:root {
+    --contactBtn-pages-gradient: linear-gradient(to right, #3ec5e1, #3ec5e1);
+}
+
+
+:root {
+    --enrollcourbnt_gradient_fill: linear-gradient(to right, #028DA0, #14D8E4);
+    --enrollcourbnt_gradient_stroke: linear-gradient(to bottom, #2F9EA5, #11B7CE);
+
+    --courses-enrollBtn_w1: 275px;
+    --courses-enrollBtn_h1: 56px;
+    --courses-enrollBtn_mt1: 24px;
+}
+
+@media (max-width: 575px) {
+    :root {
+        --courses-enrollBtn_w1: 100%;
+        --courses-enrollBtn_h1: 100.8px;
+        --courses-enrollBtn_mt1: 28.8px;
+    }
+}

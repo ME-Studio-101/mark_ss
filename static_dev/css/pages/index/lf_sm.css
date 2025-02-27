@@ -1,0 +1,265 @@
+/* Отключение неиспользуемых элементов */
+#lf-lgmd {
+    display: none;
+}
+
+/* Отключение неиспользуемых элементов */
+
+
+/* Заголовок */
+#lf_header-sm {
+    height: 129.6px;
+    margin-top: 57.6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lf_header-sm h2 {
+    margin-bottom: 0; 
+    font-family: Lato-Bold;
+    font-size: 43.2px;
+    color: #333;
+}
+
+/* Кнопки скролла */
+#lf_scroll_button_line {
+    margin-top: 21.8px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+.lf_img_container {
+    width: 90px;
+    height: 90px;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+.lf_img_container:first-child {
+    margin-left: 27px;
+}
+
+.lf_img_container:last-child {
+    margin-right: 27px;
+    margin-left: auto;
+}
+
+.lf_img_container:active {
+    background-color: rgba(62, 197, 225, 0.1);
+    border: 2px solid #3EC5E1;
+    transform: scale(0.95);
+}
+
+.lf_img_container.inactive {
+    opacity: 0.2;
+}
+
+.lf_img_container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.lf_img_container img {
+    display: block;
+    width: 43.2px;
+    height: 43.2px;
+}
+/* Кнопки скролла */
+
+/* Шпион прокрутки */
+.spy_circle {
+    width: 14.4px;
+    height: 14.4px;
+    margin: 0 7.2px;
+    background-color: #3EC5E1;
+    border-radius: 50%;
+    opacity: 0.2;
+    transition: opacity 0.3s ease;
+}
+
+.spy_circle.active {
+    opacity: 1;
+}
+/* Шпион прокрутки */
+/* Заголовок */
+
+
+/* Кейсы */
+#lf_cases_sm {
+    margin-top: 21.6px;
+}
+
+.lf_container {
+    display: flex;
+    flex-direction: column;
+    min-width: 522px;
+    height: auto;
+    padding: 0 28.8px;
+    margin-right: 27px;
+    position: relative;
+    overflow: hidden;
+    border: 1.5px solid #F0F0F0;
+    border-radius: 24px;
+    transition: background-color 0.3s ease;
+}
+
+.lf_container:nth-child(4) {
+    margin-right: 0;
+}
+
+/* Текст */
+.lf_container h3 {
+    margin-top: 300px;
+    font-family: Lato-Bold;
+    font-size: 32.4px;
+    color: #333;
+}
+
+.lf_container p {
+    margin-top: 21.6px;
+    font-family: Lato-Regular;
+    font-size: 28.8px;
+    color: #676767;
+    line-height: 110%;
+}
+
+/* Текст */
+
+/* Изображения */
+#lf_1_sm {
+    background: url(/static/img/index/lf_Format1.png) 55% 7% no-repeat, #f5f2f2;
+    background-size: 51%;
+}
+
+#lf_2_sm {
+    background: url(/static/img/index/lf_Format2.png) 55% 7% no-repeat, #f5f2f2;
+    background-size: 51%
+}
+
+#lf_3_sm {
+    background: url(/static/img/index/lf_Format3.png) 55% 7% no-repeat, #f5f2f2;
+    background-size: 51%;
+}
+
+#lf_4_sm {
+    background: url(/static/img/index/lf_Format4.png) 50% 7% no-repeat, #f5f2f2;
+    background-size: 51%;
+}
+
+/* Изображения */
+
+/* Ценники */
+.price-button {
+    position: absolute;
+    min-width: 144px;
+    top: 16px;
+    right: 16px;
+    height: 79.2px;
+    margin-left: auto;
+    border: none;
+    border-radius: 43.2px;
+    background-color: rgba(62, 197, 225, 0.1);
+    font-family: Lato-SemiBold;
+    font-size: 28.8px;
+    color: #3EC5E1;
+    cursor: auto;
+    user-select: none;
+}
+
+#format1-price,
+#format4-price {
+    width: 212.4px;
+}
+
+/* Ценники */
+
+/* Кнопки "Подробнее" */
+.lf_course-link {
+    margin-top: auto;
+    margin-bottom: 32px;
+}
+
+.lf_course_link_button {
+    display: inline-block;
+    position: absolute;
+    width: 464.4px;
+    height: 100.8px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato-Bold;
+    font-size: 30.6px;
+    color: white;
+    user-select: auto;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px double transparent;
+    box-shadow: inset rgba(255, 255, 255, 0.8) 0 2px 2px 0;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.lf_course_link_border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 464.4px;
+    height: 100.8px;
+    box-sizing: border-box;
+    border: 2px double transparent;
+    border-radius: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), linear-gradient(to bottom, #2F9EA5, #11B7CE);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    z-index: 0;
+}
+
+.lf_course_link_border::before {
+    content: '';
+    position: absolute;
+    top: -288%;
+    left: 26%;
+    width: 55%;
+    height: 690%;
+    background: radial-gradient(#028DA0, #14D8E4);
+    background-clip: padding-box;
+    transform: rotate(-65deg);
+    transform-origin: center;
+    z-index: -1;
+}
+
+.lf_course-link:hover .lf_course_link_border {
+    border: 0;
+}
+
+.lf_course_link_button:hover {
+    border: 0;
+    box-shadow: inset rgba(0, 0, 0, 0.45) 0 4px 10px 0;
+}
+
+.lf_course_link_button:active {
+    border: 0;
+    box-shadow: inset rgba(0, 0, 0, 0.75) 0 4px 11px 0;
+}
+/* Кнопки "Подробнее" */
+/* Кейсы */

@@ -1,0 +1,68 @@
+/* Убираем лишнее */
+#um_content-sm {
+    display: none;
+}
+/* Убираем лишнее */
+
+
+/* Заголовок */
+#um_header {
+    margin-top: 88px;
+}
+
+#um_header h2 {
+    font-family: Lato-Bold;
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+#um_header p {
+    font-family: Lato-Regular;
+    font-size: 18px;
+    color: #676767;
+}
+/* Заголовок */
+
+
+/* Контент */
+#um_content-lgmd{
+    margin-top: 44px;
+}
+
+#um_content-lgmd> .row > .col > img {
+    width: 688px;
+}
+
+/* Кейсы */
+#um_cases {
+    margin-top: 44px;
+}
+
+#um_cases > .row {
+    margin-bottom: 32px;
+}
+
+#um_cases > .row:last-child {
+    margin-bottom: 0;
+}
+
+#um_cases > .row > .col:first-child {
+    max-width: 70px;
+    margin-right: 16px;
+}
+
+#um_cases h3 {
+    margin-bottom: 5px;
+    font-family: Lato-Bold;
+    font-size: 22px;
+    color: #333;
+}
+
+#um_cases p {
+    font-family: Lato-Regular;
+    font-size: 16px;
+    color: #676767;
+}
+/* Кейсы */
+/* Контент */

@@ -1,0 +1,52 @@
+
+:root {
+    --header_brand-color: #2181E0;
+    --header_main_color: #333;
+    --header_main_color_07: #303030BF;
+    --header_hover_element-color: #2181E0;
+    --contactBtn-pages-gradient: linear-gradient(to right, #50C0F8, #0057D0);
+    --nav_icons-color: #303030;
+
+    --gradient_text-gradient:  linear-gradient(to right, #50C0F8, #4A9EDB);
+    --gradient_text-gradient_2:  linear-gradient(to right, #4A9EDB, #0057D0);
+}
+
+/* LG */
+@media (min-width: 991px) {
+    :root {
+        --header-h: var;
+    }
+}
+
+/* MD */
+@media (min-width: 576px) and (max-width: 991px) {
+    :root {
+        --var: var;
+    }
+}
+
+/* SM */
+@media (max-width: 575px) {
+    :root {
+        --var: var;
+    }
+}
+
+
+
+:root {
+    --enrollcourbnt_gradient_fill: linear-gradient(to right, #028DA0, #14D8E4);
+    --enrollcourbnt_gradient_stroke: linear-gradient(to bottom, #2F9EA5, #11B7CE);
+
+    --courses-enrollBtn_w1: 275px;
+    --courses-enrollBtn_h1: 56px;
+    --courses-enrollBtn_mt1: 24px;
+}
+
+@media (max-width: 575px) {
+    :root {
+        --courses-enrollBtn_w1: 100%;
+        --courses-enrollBtn_h1: 100.8px;
+        --courses-enrollBtn_mt1: 28.8px;
+    }
+}

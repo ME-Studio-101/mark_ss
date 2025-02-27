@@ -1,0 +1,16 @@
+
+@import url("/static/css/pages/about/ababa.css");
+@import url("/static/css/pages/about/carousel.css");
+@import url("/static/css/pages/about/abawy.css");
+@import url("/static/css/pages/about/abac2u.css");
+
+
+
+
+.carousel-control-next {
+    opacity: .9;
+}
+
+.carousel-control-prev {
+    opacity: .9;
+}

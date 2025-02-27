@@ -1,0 +1,202 @@
+
+#adv-sm {
+    display: none;
+}
+
+/* Заголовок */
+#adv_header-lgmd {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 44px;
+}
+
+#adv_header-lgmd h2 {
+    width: 1164px;
+    margin-bottom: 0;
+    font-family: Lato-Bold;
+    font-size: 40px;
+    color: #333;
+}
+
+/* */
+
+
+/* Кейсы */
+#adv_cases-lgmd {
+    margin-top: 32px;
+}
+
+.adv_case {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    min-width: 100%;
+    height: 536px;
+    padding: 32px;
+    margin-right: 80px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.adv_case:last-child {
+    margin-right: 0;
+}
+
+#adv_case-1 {
+    background-color: #DBCAFF1A;
+    border: 1px solid #DBCAFF99;
+}
+
+#adv_case-2 {
+    background-color: #CADFFF1A;
+    border: 1px solid #CADFFF99;
+}
+
+#adv_case-3 {
+    background-color: #FFE3CA1F;
+    border: 1px solid #FFD7B399;
+}
+
+#adv_case-4 {
+    background-color: #FFF3CA26;
+    border: 1px solid #FFE99DCC;
+}
+
+#adv_case-5 {
+    background-color: #FFCACD1A;
+    border: 1px solid #FFCACD99;
+}
+
+
+/* Кейсы - Типография */
+.adv_case h3 {
+    margin-top: 32px;
+    font-family: Lato-Bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+#adv1_case_h3_1 {
+    color: #A089FF;
+}
+
+#adv1_case_h3_2 {
+    color: #6F98FF;
+}
+
+#adv1_case_h3_3 {
+    color: #FF8616;
+}
+
+#adv1_case_h3_4 {
+    color: #FFC71D;
+}
+
+#adv1_case_h3_5 {
+    color: #FF6373;
+}
+
+
+.adv_case h2 {
+    margin-top: 4px;
+    font-family: Lato-Bold;
+    font-size: 24px;
+    color: #333;
+}
+
+.adv_case p {
+    margin-top: 12px;
+    font-family: Lato-Regular;
+    font-size: 16px;
+    color: #333;
+}
+
+/* */
+
+/* Кейсы - изображения */
+.adv_case_img_container {
+    width: 624px;
+    height: 233px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+}
+
+.adv_case_img_container img {
+    width: 200px;
+    height: 200px;
+}
+
+
+#adv_case_img_container1 {
+    background-color: #DBCAFF;
+    background-image: url(/static/img/courses/course1/adv1_case_svg1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#adv_case_img_container2 {
+    background-color: #CADFFF;
+    background-image: url(/static/img/courses/course1/adv1_case_svg2.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#adv_case_img_container3 {
+    background-color: #FFE3CA;
+    background-image: url(/static/img/courses/course1/adv1_case_svg3.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#adv_case_img_container4 {
+    background-color: #FFF3CA;
+    background-image: url(/static/img/courses/course1/adv1_case_svg4.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#adv_case_img_container5 {
+    background-color: #FFCACD;
+    background-image: url(/static/img/courses/course1/adv1_case_svg5.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* */
+
+
+/* Шпион прокрутки */
+.spy_circle {
+    width: 12px;
+    height: 12px;
+    margin: 0 12px;
+    background-color: var(--spy_circles_color);
+    border-radius: 50%;
+    opacity: 0.2;
+    transition: opacity 0.3s ease;
+}
+
+.spy_circle.active {
+    opacity: 1;
+}
+
+/* */
+
+
+#adv_scroll_spy {
+    display: flex;
+    justify-content: center;
+    margin-top: 44px;
+    margin-bottom: 64px;
+}

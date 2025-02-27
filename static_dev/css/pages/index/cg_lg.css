@@ -1,0 +1,90 @@
+#cg {
+    height: 500px;
+    padding: 0;
+    margin-top: 48px;
+}
+
+#cg_content {
+    height: 452px;
+    margin-top: 48px;
+    padding: 64px 112px;
+    position: relative;
+    background: url(/static/img/index/cg_W-Vector.svg) no-repeat, linear-gradient(45deg, #18a3c0 0%, #3cc4e1 100%);
+    background-position: 610px, 0;
+    background-size: 830px, auto;
+    z-index: 0;
+}
+
+@media (min-width: 1441px) {
+    #cg_content {
+    border-radius: 20px;
+    }
+}
+
+
+#cg_content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/static/img/index/cg_pattern-figures.png);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#cg_content:after {
+    content: "";
+    position: absolute;
+    top: -9%;
+    left: 57.5%;
+    width: 110%;
+    height: 110%;
+    background: url(/static/img/index/cg_Girl_lg.png) no-repeat;
+    background-size: 612px;
+    z-index: 0;
+}
+
+#cg_content h2 {
+    font-family: Lato-Bold;
+    font-size: 32px;
+    color: white;
+}
+
+#cg_content ul {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    padding: 0;
+    opacity: 0.8;
+}
+
+#cg_content li {
+    margin: 6px 0;
+    margin-left: 36px;
+    font-family: Lato-Medium;
+    font-size: 20px;
+    color: white;
+}
+
+
+/* Кнопка "Девочки на стуле" */
+#cg_content button {
+    font-family: Lato-Bold;
+    font-size: 17px;
+    color: #333;
+    width: 275px;
+    height: 66px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: #0791AE 0 20px 25px 0;
+    z-index: 100;
+}
+
+#cg_content button:hover {
+    box-shadow: #007996 0 30px 35px 0;
+}
+
+#cg_content button:active {
+    box-shadow: inset #007996 0 4px 11px 0;
+}

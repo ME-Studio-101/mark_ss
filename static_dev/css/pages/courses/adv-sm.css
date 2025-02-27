@@ -1,0 +1,289 @@
+#adv-lgmd {
+    display: none;
+}
+
+/* Заголовок */
+#adv_header-sm {
+    height: 64.8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 57.6px;
+}
+
+#adv_header-sm h2 {
+    margin-bottom: 0;
+    font-family: Lato-Bold;
+    font-size: 43.2px;
+    color: #333;
+}
+
+/* */
+
+
+/* Кейсы */
+#adv_cases-sm {
+    margin-top: 28.8px;
+}
+
+.adv_case {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    min-width: 100%;
+    height: auto;
+    padding: 28.8px;
+    margin-right: 54px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.adv_case:last-child {
+    margin-right: 0;
+}
+
+#adv_case-1-sm {
+    background-color: #DBCAFF1A;
+    border: 1px solid #DBCAFF99;
+}
+
+#adv_case-2-sm {
+    background-color: #CADFFF1A;
+    border: 1px solid #CADFFF99;
+}
+
+#adv_case-3-sm {
+    background-color: #FFE3CA1F;
+    border: 1px solid #FFD7B399;
+}
+
+#adv_case-4-sm {
+    background-color: #FFF3CA26;
+    border: 1px solid #FFE99DCC;
+}
+
+#adv_case-5-sm {
+    background-color: #FFCACD1A;
+    border: 1px solid #FFCACD99;
+}
+
+
+/* Кейсы - Типография */
+.adv_case h3 {
+    margin-top: 43.2px;
+    font-family: Lato-Bold;
+    font-size: 25.2px;
+    text-transform: uppercase;
+}
+
+
+#adv1_case_h3_1-sm {
+    color: #A089FF;
+}
+
+#adv1_case_h3_2-sm {
+    color: #6F98FF;
+}
+
+#adv1_case_h3_3-sm {
+    color: #FF8616;
+}
+
+#adv1_case_h3_4-sm {
+    color: #FFC71D;
+}
+
+#adv1_case_h3_5-sm {
+    color: #FF6373;
+}
+
+
+.adv_case h2 {
+    margin-top: 7.2px;
+    font-family: Lato-Bold;
+    font-size: 36px;
+    color: #333;
+}
+
+.adv_case p {
+    margin-top: 21.6px;
+    font-family: Lato-Regular;
+    font-size: 28.8px;
+    color: #333;
+}
+
+/* */
+
+/* Кейсы - изображения */
+.adv_case_img_container {
+    width: 464.4px;
+    height: 419.4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+}
+
+.adv_case_img_container img {
+    width: 360px;
+    height: 360px;
+}
+
+
+#adv_case_img_container1-sm {
+    background-color: #DBCAFF;
+    background-image: url(/static/img/courses/course1/adv1_case_svg1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: start;
+}
+
+#adv_case_img_container2-sm {
+    background-color: #CADFFF;
+    background-image: url(/static/img/courses/course1/adv1_case_svg2.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: start;
+}
+
+#adv_case_img_container3-sm {
+    background-color: #FFE3CA;
+    background-image: url(/static/img/courses/course1/adv1_case_svg3.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: start;
+}
+
+#adv_case_img_container4-sm {
+    background-color: #FFF3CA;
+    background-image: url(/static/img/courses/course1/adv1_case_svg4.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: start;
+}
+
+#adv_case_img_container5-sm {
+    background-color: #FFCACD;
+    background-image: url(/static/img/courses/course1/adv1_case_svg5.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: start;
+}
+
+/* */
+
+
+/* Шпион прокрутки */
+.spy_circle {
+    width: 14.4px;
+    height: 14.4px;
+    margin: 0 7.2px;
+    background-color: var(--spy_circles_color);
+    border-radius: 50%;
+    opacity: 0.2;
+    transition: opacity 0.3s ease;
+}
+
+.spy_circle.active {
+    opacity: 1;
+}
+
+/* */
+
+#adv_scroll_spy-sm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* Размеры изображений для sm */
+
+
+
+/* 2 страница */
+
+#adv_case2_content_img1 {
+    width: 360.0px;
+    height: 360.0px;
+}
+
+
+#adv_case2_content_img2 {
+    width: 360.0px;
+    height: 360.0px;
+}
+
+
+#adv_case2_content_img3 {
+    width: 360.0px;
+    height: 360.0px;
+}
+
+
+#adv_case2_content_img4 {
+    width: 360.0px;
+    height: 360.0px;
+}
+
+
+/* 3 страница */
+
+
+#adv_case3_content_img1 {
+    width: 414.0px;
+    height: 279.0px;
+}
+
+
+#adv_case3_content_img2 {
+    width: 324.0px;
+    height: 324.0px;
+}
+
+
+#adv_case3_content_img3 {
+    width: 360.0px;
+    height: 360.0px;
+}
+
+
+#adv_case3_content_img4 {
+    width: 360.0px;
+    height: 360.0px;
+}
+
+#adv_case3_content_img5 {
+    width: 432.0px;
+    height: 432.0px;
+}
+
+
+/* 4 страница */
+
+
+#adv_case4_content_img1 {
+    width: 522.0px;
+    height: 261.0px;
+}
+
+#adv_case4_content_img2 {
+    width: 360px;
+    height: 360px;
+}
+
+#adv_case4_content_img3 {
+    width: 468px;
+    height: 468px;
+}
+
+#adv_case4_content_img4 {
+    width: 360px;
+    height: 360px;
+}
+
+#adv_case4_content_img5 {
+    width: 432px;
+    height: 432px;
+}

@@ -1,0 +1,49 @@
+:root {
+    --black_main_color: #333;
+    --black_submain_color: #676767;
+
+    --header_main_color: #333;
+    --header_main_color_07: #303030BF;
+    --header_logo-color: #5569E9;
+
+    --header_hover_element-color: #5569E9;
+    --header_brand-color: #5569E9;
+
+    --ch_case_color1: #DBE6FC;
+
+    /* Цвета тегов */
+    --court_gradient_fill: linear-gradient(to right, #7986FC0d, #2A45D10d);
+    --court_gradient_stroke: linear-gradient(to right, #7986FC, #2A45D1);
+    /* Цвет градиентного текста в заголовках  */
+    --gradient_text-gradient: linear-gradient(90deg, #7986FC 0%, #2A45D1 100%);
+    /* Градент кнопки заманухи на первом экране */
+    --enrollcourbnt_gradient_fill: linear-gradient(to right, #7986FC, #2A45D1);
+    --enrollcourbnt_gradient_stroke: linear-gradient(to bottom, #222AE2B3, #1963F2B3);
+    /* Градиент фона задника второго блока первого экрана */
+    --preview_block2_gradient: linear-gradient(45deg, #7986FC 0%, #2A45D1 100%);
+
+    /* Градиент полосы разделения внутри характеристик */
+    --char_hr_gradient: linear-gradient(to right, #C8DAFF33 0%, #C8DAFFCC 52%, #C8DAFF33 100%);
+
+    /* Цвет кружочков отслеживания */
+    --spy_circles_color: #5569E9;
+
+    /* Градиент фона заманивалки в конце */
+    --inc_les_bg_gradient: linear-gradient(to right, #7986FC, #2A45D1);
+    /* Цвета тени у кнопки там же */
+    --inc_les_b_shadow1: #374CCB;
+    --inc_les_b_shadow2: #1E33B2;
+    
+    /* Цвет иконок в навигации */
+    --nav_icons-color: #303030;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+
+/* Buttons */
+:root {
+    --contactBtn-pages-gradient: linear-gradient(to right, #7986FC, #2A45D1);
+}

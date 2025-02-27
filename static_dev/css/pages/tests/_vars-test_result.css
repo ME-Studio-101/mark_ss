@@ -1,0 +1,60 @@
+
+
+/* Header */
+:root {
+    --black_main_color: white;
+    --black_submain_color: #676767;
+}
+
+:root {
+    --header_main_color: white;
+    --header_main_color_07: #ffffffBF;
+    --header_logo-color: white;
+    --header_hover_element-color: #3EC5E1;
+    --header_brand-color: white;
+
+    /* Цвет иконок в навигации */
+    --nav_icons-color: #ffffff;
+}
+
+:root {
+    --enrollcourbnt_gradient_fill: linear-gradient(to right, #028DA0, #14D8E4);
+    --enrollcourbnt_gradient_stroke: linear-gradient(to bottom, #2F9EA5, #11B7CE);
+
+    --courses-enrollBtn_w1: 275px;
+    --courses-enrollBtn_h1: 56px;
+    --courses-enrollBtn_mt1: 24px;
+}
+
+@media (max-width: 575px) {
+    :root {
+        --courses-enrollBtn_w1: 100%;
+        --courses-enrollBtn_h1: 100.8px;
+        --courses-enrollBtn_mt1: 28.8px;
+    }
+}
+
+
+
+/* Buttons */
+:root {
+    --contactBtn-pages-gradient: linear-gradient(to right, yellow, yellow);
+}
+
+
+:root {
+    --enrollcourbnt_gradient_fill: linear-gradient(to right, #50C0F8, #0057D0);
+    --enrollcourbnt_gradient_stroke: linear-gradient(to bottom, #2181E0B3, #2182E1B3);
+
+    --courses-enrollBtn_w1: 275px;
+    --courses-enrollBtn_h1: 56px;
+    --courses-enrollBtn_mt1: 24px;
+}
+
+@media (max-width: 575px) {
+    :root {
+        --courses-enrollBtn_w1: 100%;
+        --courses-enrollBtn_h1: 100.8px;
+        --courses-enrollBtn_mt1: 0;
+    }
+}

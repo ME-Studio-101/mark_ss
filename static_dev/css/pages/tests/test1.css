@@ -1,0 +1,500 @@
+.test1_words {
+    width: 102%;
+    position: relative;
+    left: calc(-2px * 1.8);
+}
+
+@media (min-width: 576px) {
+    .test-shadow {
+        height: 104px;
+        box-shadow: #0000000D 0 10px 25px -5px;
+    }
+}
+
+#test1 {
+    padding: 64px 180px;
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    #test1 {
+        padding: 32px 0;
+    }
+}
+
+@media (max-width: 575px) {
+    #test1 {
+        padding: 0;
+        margin-top: 111.6px;
+    }
+}
+
+#test1_content_container {
+    margin-top: 24px;
+    padding: 44px;
+    border-radius: 24px;
+    box-shadow: #0000000D 0 10px 25px -5px;
+}
+
+#test1_content_container h2 {
+    font-family: Lato-Bold;
+    font-size: 24px;
+}
+
+#test1_content_container p {
+    margin-top: 32px;
+    margin-bottom: 4px;
+    font-family: Lato-Medium;
+    font-size: 18px;
+    color: #676767;
+}
+
+@media (max-width: 575px) {
+    #test1_content_container {
+        margin-top: 28.8px;
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    #test1_content_container h2 {
+        font-size: 43.2px;
+    }
+
+    #test1_content_container p {
+        margin-top: 28.8px;
+        margin-bottom: calc(4px*1.8);
+        font-size: 32.4px;
+    }
+}
+
+@media (min-width: 991px) {
+    .mt-2em-lg {
+        margin-top: 2em !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .mt-2em-md {
+        margin-top: 2em !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .mt-2em-sm {
+        margin-top: 2em !important;
+    }
+}
+
+.word_button {
+    position: relative;
+    margin: 12px;
+    padding: 12px 32px;
+    font-family: Lato-Medium;
+    font-size: 16px;
+    color: #303030;
+    background-image: linear-gradient(to bottom, #F9F9F9, #F9F9F9);
+    border: 0;
+    border-radius: 9999px;
+    cursor: default !important;
+    user-select: none;
+    white-space: nowrap;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+@media (max-width:575px) {
+    .word_button {
+        margin: calc(4px*1.8);
+        padding: calc(8px*1.8) calc(16px*1.8);
+        font-size: calc(14px*1.8);
+    }
+}
+
+.word_button::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background-image: linear-gradient(to bottom, #DEDEDE, #DEDEDE);
+    border-radius: 9999px;
+    z-index: -1;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+@media (min-width:576px) {
+
+    .word_button:hover::before,
+    .word_button.selected::before {
+        background-image: linear-gradient(to right, #50C0F8, #0057D0);
+    }
+}
+
+@media (max-width:576px) {
+
+    .word_button:active::before,
+    .word_button.selected::before {
+        background-image: linear-gradient(to right, #50C0F8, #0057D0);
+    }
+}
+
+.word_button.selected,
+.word_button.selected {
+    background-image: linear-gradient(to right, #50C0F80d, #0057D00d);
+}
+
+
+/* ТЕСТ 2 */
+
+#test2 {
+    padding: 0 180px 64px;
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    #test2 {
+        padding: 0 0 32px;
+    }
+}
+
+@media (max-width: 575px) {
+    #test2 {
+        padding: 0;
+        margin-top: 111.6px;
+    }
+}
+
+
+#test2_content_container {
+    margin-top: 24px;
+    padding: 44px;
+    border-radius: 24px;
+    box-shadow: #0000000D 0 10px 25px -5px;
+}
+
+#test2_content_container h2 {
+    font-family: Lato-Bold;
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+
+@media (max-width: 575px) {
+    #test2_content_container {
+        margin-top: 28.8px;
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    #test2_content_container h2 {
+        font-size: calc(24px*1.8);
+        margin-bottom: calc(16px*1.8);
+    }
+}
+
+.test2_case {
+    margin-bottom: 32px;
+}
+
+.test2_case h4 {
+    font-family: Lato-Bold;
+    font-size: 18px;
+    color: #303030;
+}
+
+.test2_case label {
+    font-family: Lato-Medium;
+    font-size: 16px;
+    color: #303030;
+    margin-top: 16px;
+    margin-left: 8px;
+}
+
+
+@media (max-width: 575px) {
+    .test2_case {
+        margin-bottom: calc(32px*1.8);
+    }
+
+    .test2_case h4 {
+        font-family: Lato-Bold;
+        font-size: calc(18px*1.8);
+    }
+
+    .test2_case label {
+        font-family: Lato-Medium;
+        font-size: calc(16px*1.8);
+        color: #303030;
+        margin-top: calc(16px*1.8);
+        margin-left: calc(8px*1.8);
+    }
+
+}
+
+
+/* ТЕСТ 3 */
+#test3 {
+    padding: 0 180px 64px;
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    #test3 {
+        padding: 0 0 32px;
+    }
+}
+
+@media (max-width: 575px) {
+    #test3 {
+        padding: 0;
+        margin-top: 111.6px;
+    }
+}
+
+
+#test3_content_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 24px;
+    padding: 24px 44px 44px;
+    border-radius: 24px;
+    box-shadow: #0000000D 0 10px 25px -5px;
+}
+
+#test3_content_container img {
+    width: 200px;
+    height: 200px;
+}
+
+
+#test3_content_container h2 {
+    font-family: Lato-Bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#test3_content_container p {
+    max-width: auto;
+    font-family: Lato-Medium;
+    font-size: 18px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+@media (max-width: 575px) {
+    #test3_content_container {
+        margin-top: 28.8px;
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    #test3_content_container img {
+        width: calc(100px*1.8);
+        height: calc(100px*1.8);
+    }
+
+    #test3_content_container p {
+        font-family: Lato-Regular;
+        font-size: calc(14px*1.8);
+        margin-bottom: calc(24px*1.8);
+    }
+}
+
+
+/* ТЕСТ 3 - Вопросы */
+.test3_case-question {
+    padding: 0 48px;
+    display: flex;
+    flex-direction: column;
+    align-self: end;
+}
+
+.test3_case-answer {
+    padding: 32px 48px 12px;
+    display: flex;
+    align-self: start;
+}
+
+@media (max-width: 575px) {
+    .test3_case-question {
+        padding: 0 16px;
+    }
+}
+
+
+/* ТЕСТ 3 - кнопка как в тест1 но с доп настройками */
+.word_button-t3 {
+    position: relative;
+    margin: 12px;
+    padding: 12px 32px;
+    font-family: Lato-Medium;
+    font-size: 16px;
+    color: #303030;
+    background-image: linear-gradient(to bottom, #F9F9F9, #F9F9F9);
+    border: 0;
+    border-radius: 16px;
+    cursor: default !important;
+    user-select: none;
+    white-space: nowrap;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+@media (max-width:575px) {
+    .word_button-t3 {
+        margin: calc(4px*1.8);
+        padding: calc(8px*1.8) calc(16px*1.8);
+        font-size: calc(10px*1.8);
+    }
+}
+
+.word_button-t3::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background-image: linear-gradient(to bottom, #DEDEDE, #DEDEDE);
+    border-radius: 16px 16px 0 16px;
+    z-index: -1;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+@media (min-width:576px) {
+
+    .word_button-t3:hover::before/*,
+    .word_button-t3.selected::before*/ {
+        background-image: linear-gradient(to right, #50C0F8, #0057D0);
+    }
+
+    .word_button-t3.disabled::before,
+    .word_button-t3.selected::before {
+        content: none;
+    }
+}
+
+
+.word_button-t3.disabled,
+.word_button-t3.selected {
+    border-radius: 16px 16px 0 16px;
+}
+
+.word_button-t3.disabled {
+    opacity: 0.5; /* Уменьшаем непрозрачность, чтобы показать, что кнопка неактивна */
+    pointer-events: none; /* Отключаем взаимодействие с кнопкой */
+    cursor: not-allowed; /* Изменяем курсор на "недоступно" */
+}
+
+.word_button-t3.correct {
+    background-image: linear-gradient(to bottom, #45B66C33, #45B66C33);
+}
+
+.word_button-t3.incorrect {
+    background-image: linear-gradient(to bottom, #FAE1DC, #FAE1DC);
+    text-decoration: line-through;
+}
+
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;  
+    overflow: hidden;
+    transform: scale(0.95); /* Начальное уменьшение размера для эффекта */
+}
+
+.visible-1 {
+    opacity: 1;
+    visibility: visible;
+    max-height: 1000px; /* Достаточно большое значение, чтобы вместить содержимое */
+    transform: scale(1); /* Возвращаем к нормальному размеру */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out, max-height 1s ease-in-out;
+}
+
+.visible-2 {
+    opacity: 1;
+    visibility: visible;
+    max-height: 1000px; /* Достаточно большое значение, чтобы вместить содержимое */
+    transform: scale(1); /* Возвращаем к нормальному размеру */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out, max-height 1s ease-in-out;
+    transition-delay: 2.5s; /* Задержка начала анимации на 1.5 секунды */
+}
+
+
+
+/* Аудиолеер */
+.audio-player {
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #f5f5f5;
+    border-radius: 16px;
+}
+
+.audio-player-btn {
+    width: 32px;
+    height: 32px;
+    background-color: #2181E0;
+    border: 0;
+    border-radius: 9999px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.audio-player-btn i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px; /* Подберите размер по вашему усмотрению */
+}
+
+.apbi-ml2 {
+    margin-left: 2px;
+}
+
+
+
+.audio-player input[type="range"] {
+    width: 227px;
+}
+
+.next-test-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.next-test-button button {
+    padding: 16px 32px;
+    font-family: Lato-Bold;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(to right, #50C0F8, #0057D0);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.next-test-button button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 575px) {
+    .next-test-button {
+        margin-top: calc(32px * 1.8);
+        margin-bottom: calc(32px * 1.8);
+    }
+
+    .next-test-button button {
+        padding: calc(16px * 1.8) calc(32px * 1.8);
+        font-size: calc(14px * 1.8);
+        border-radius: calc(12px * 1.8);
+    }
+}
+

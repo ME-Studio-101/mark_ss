@@ -1,0 +1,498 @@
+/* API 
+--header_brand-color | цвет лого
+--header_main_color | цвет элементов меню
+--header_main_color_07 | цвет элементов меню
+--header_hover_element-color | цвет элементов при наведении
+*/
+
+/* Отключение неиспользуемых элементов */
+@media (min-width: 991px) {
+    #nav_mdsm {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    #nav_lg {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+
+    #nav_lg,
+    .nav-item .contactBtn-pages {
+        display: none;
+    }
+}
+
+/* Логотип */
+.navbar-brand {
+    margin-right: 48px;
+    font-family: Lato-Bold;
+    font-size: 21px;
+    color: var(--header_brand-color);
+    text-decoration: none;
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .navbar-brand {
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .navbar-brand {
+        margin-right: auto;
+        font-size: 28.8px;
+    }
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+    cursor: default;
+    color: var(--header_brand-color);
+}
+
+/* */
+
+/* Телефон */
+#contactPhone-lg {
+    margin-right: 24px;
+    color: var(--header_main_color);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+#contactPhone-lg:hover {
+    opacity: 0.8;
+}
+
+#contactPhone-mdsm {
+    margin-bottom: 20px;
+    color: var(--black_main_color);
+    font-size: 20px;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+@media (max-width: 575px) {
+    #contactPhone-mdsm {
+        margin-bottom: 28.8px;
+        font-size: 28.8px;
+    }
+}
+
+#contactPhone-mdsm:focus,
+#contactPhone-mdsm:active {
+    opacity: 0.8;
+}
+
+/* */
+
+/* Навигационная панель */
+.navbar {
+    height: 72px;
+    margin: 16px 0;
+    padding: 0;
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .navbar {
+        height: auto;
+        margin: 24px 0 0 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .navbar {
+        height: auto;
+        margin: 27.675px 0 0 0;
+    }
+}
+
+/* NAVBAR (LG) */
+.nav-item {
+    margin: 0 8px;
+}
+
+.nav-item a {
+    font-family: Lato-SemiBold, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--header_main_color);
+}
+
+/* Анимация ссылок */
+.nav-animation {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-animation:focus {
+    color: var(--header_main_color);
+}
+
+.navbar-nav:hover .nav-animation {
+    color: var(--header_main_color_07);
+}
+
+.navbar-nav:hover .nav-animation:hover {
+    color: var(--header_main_color);
+}
+
+.navbar-nav .nav-animation::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navbar-nav:hover .nav-animation:hover::after,
+.navbar-nav .nav-animation:focus::after {
+    transform: scaleX(1);
+}
+
+/* Выпадающее меню */
+/* Кнопка */
+#dropdown-button {
+    margin: 1px 0;
+    padding: 15px 24px;
+    border-radius: 24px 24px 0 0;
+    user-select: none;
+    pointer-events: none;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dropdown:hover .dropdown-button,
+.dropdown:focus-within .dropdown-button {
+    background-color: white;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-button svg {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+    vertical-align: middle;
+}
+
+.dropdown:hover .dropdown-button svg {
+    transform: rotate(180deg);
+}
+
+/* Кнопка */
+
+/* Тело выпадающего меню */
+.dropdown-menu {
+    width: 260px;
+    top: 95%;
+    padding: 0;
+    background-color: white;
+    border: none;
+    border-radius: 0 24px 24px 24px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-menu a {
+    color: #333;
+    padding: 16px 24px;
+    font-family: Lato-Medium, sans-serif;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+/* Определяем анимацию */
+@keyframes enablePointerEvents {
+    0% {
+        pointer-events: none;
+    }
+
+    100% {
+        pointer-events: auto;
+    }
+}
+
+/* Применяем анимацию с задержкой */
+.dropdown-menu:hover a {
+    animation: enablePointerEvents 0s 0.1s forwards;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu a:focus {
+    color: var(--header_hover_element-color);
+    background-color: rgba(62, 197, 225, 0.05);
+}
+
+/* Ссылки выпадающего меню */
+.dropdown-item {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item svg {
+    display: none;
+    margin-left: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.dropdown_svg-stroke path {
+    stroke: var(--header_hover_element-color);
+}
+
+
+.dropdown-item:active {
+    background-color: transparent;
+}
+
+.dropdown-item:hover svg {
+    display: inline;
+    opacity: 1;
+}
+
+.dropdown-item:not(:last-child) {
+    border-bottom: 1px solid rgba(68, 68, 68, 0.1);
+}
+
+
+/* OFFCANVAS (MD SM) */
+/* Кнопка Offcanvas*/
+.navbar-toggler {
+    padding: 0;
+    border: none;
+}
+
+.navbar-toggler:focus,
+.offcanvas-header .btn-close {
+    box-shadow: none;
+}
+
+.navbar-toggler svg {
+    width: 24px;
+    height: auto;
+    margin-top: -6.25px;
+}
+
+@media (max-width: 575px) {
+    .navbar-toggler svg {
+        width: 28.8px;
+        margin-top: -6px;
+    }
+}
+
+/* */
+
+/* Панель Offcanvas */
+.navbar-nav .nav-link.active {
+    color: var(--black_main_color);
+}
+
+.offcanvas {
+    background-color: #fff;
+}
+
+.offcanvas-index {
+    background-image: url(/static/img/sidebar/sidebar_bg.png);
+    background-size: cover;
+}
+
+@media (max-width: 575px) {
+    .offcanvas.offcanvas-end {
+        width: 100%;
+    }
+}
+
+.offcanvas-header {
+    margin-top: 6px;
+    padding: 18.75px 20px;
+}
+
+@media (max-width: 575px) {
+    .offcanvas-header {
+        margin-top: 0;
+        padding: 28.8px 37.8px;
+    }
+}
+
+.offcanvas-header .btn-close {
+    background-image: none;
+    opacity: 1;
+}
+
+.offcanvas-header .btn-close svg {
+    width: 17px;
+    height: auto;
+    margin-top: -11px;
+    margin-left: -26.25px;
+}
+
+@media (max-width: 575px) {
+    .offcanvas-header .btn-close svg {
+        width: 21.6px;
+        margin-top: -16px;
+        margin-left: -21.6px;
+    }
+}
+
+.offcanvas-body {
+    padding: 23.75px 18.75px 0;
+}
+
+@media (max-width: 575px) {
+    .offcanvas-body {
+        padding: 35.2px 27px 0;
+    }
+}
+
+.offcanvas-body svg {
+    opacity: 100;
+    width: 9px;
+}
+
+@media (max-width: 575px) {
+    .offcanvas-body svg {
+        width: 12.65px;
+    }
+}
+
+/* ? */
+.offcanvas-body .row:nth-child(2) {
+    margin-top: 143.8px;
+}
+
+/* */
+
+.offcanvas-link {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    margin-right: 18.75px;
+    border-bottom: 1.5px solid #d4d3d390;
+}
+
+@media (max-width: 575px) {
+    .offcanvas-link {
+        padding-top: 43.2px;
+        padding-bottom: 21.6px;
+        margin-right: 21.6px;
+        border-bottom: 2.16px solid #d4d3d390;
+    }
+}
+
+.offcanvas-nav .nav-link {
+    color: var(--black_main_color);
+    font-family: Lato-SemiBold;
+    font-size: 22.5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+@media (max-width: 575px) {
+    .offcanvas-nav .nav-link {
+        font-size: 32.4px;
+    }
+}
+
+.offcanvas-nav .nav-link:not(.inactive):focus,
+.offcanvas-nav .nav-link:not(.inactive):active {
+    color: var(--black_main_color);
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.offcanvas-nav .nav-link.inactive {
+    pointer-events: none;
+}
+
+#offcanvas-subnav {
+    padding: 2px 0 0 15px;
+    margin: 0 15px 0 0;
+    list-style-type: none;
+}
+
+@media (max-width: 575px) {
+    #offcanvas-subnav {
+        padding: 6.4px 0 0 21.6px;
+        margin: 0 21.6px 0 0;
+    }
+}
+
+#offcanvas-subnav .nav-link {
+    padding: 10px 0;
+    font-family: Lato-Regular;
+    font-size: 17.5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+
+#offcanvas-subnav .nav-link div {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 575px) {
+    #offcanvas-subnav .nav-link {
+        padding: 14.4px 0;
+        font-size: 25.2px;
+    }
+}
+
+#offcanvas-subnav .nav-link:focus,
+#offcanvas-subnav .nav-link:active {
+    color: var(--black_main_color);
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+#ofc-footer {
+    height: 18.75px;
+}
+
+@media (max-width: 575px) {
+    #ofc-footer {
+        height: 27px;
+    }
+}
+
+/* */
+
+
+.h-active_link,
+.h-active_link:active,
+.h-active_link:hover,
+.h-active_link:focus {
+    color: #333 !important;
+    cursor: not-allowed;
+    color: gray !important;
+}
+
+.h-active_link svg,
+.h-active_link:active svg,
+.h-active_link:hover svg,
+.h-active_link:focus svg {
+    opacity: 0;
+}
+
+.h-active_link::after,
+.h-active_link:active::after,
+.h-active_link:hover::after,
+.h-active_link:focus::after {
+    transform: scaleX(1) !important;
+}

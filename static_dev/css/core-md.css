@@ -1,0 +1,44 @@
+
+
+/* Основной контейнер */
+.ss_container {
+    width: var(--ss_w-md);
+    margin: 0 auto;
+    padding: 0 40px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .ss_container {
+        border-radius: 0 !important;
+    }
+}
+/* Основной контейнер */
+
+
+/* Горихзонтальный скролл */
+.ss_container2 {
+    min-width: 768px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.hs_pad {
+    padding: 0 calc(40px + var(--hs-cases-start-end-min-width));
+}
+
+@media (max-width: 768px) {
+    .hs_pad {
+        padding: 0 40px;
+    }
+}
+/* Горихзонтальный скролл */
+
+
+/* Утилиты */
+.br_md {
+    display: block;
+    width: 100%;
+}
+/* Утилиты */

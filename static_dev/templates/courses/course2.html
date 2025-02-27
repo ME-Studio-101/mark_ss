@@ -1,0 +1,402 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block meta_description %}Курс интенсив{% endblock %}
+
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/pages/courses/_vars-course2.css' %}">
+<!-- Стили для экранов до 575px -->
+<link rel="stylesheet" href="{% static 'css/pages/courses/_build-courses-sm.css' %}"
+  media="only screen and (max-width: 575px)">
+<!-- Стили для экранов от 576px до 991px -->
+<link rel="stylesheet" href="{% static 'css/pages/courses/_build-courses-md.css' %}"
+  media="only screen and (min-width: 576px) and (max-width: 991px)">
+<!-- Стили для экранов больше 992px -->
+<link rel="stylesheet" href="{% static 'css/pages/courses/_build-courses-lg.css' %}"
+  media="only screen and (min-width: 992px)">
+{% endblock %}
+
+
+{% block main %}
+<!-- #1 Первый экран -->
+<div id="prewiew">
+  <!-- Для LG -->
+  <div id="prewiew-lg" class="ss_container">
+    <div class="row">
+
+      <div id="prewiew-main_content" class="cast_col">
+        <div class="back2home">
+          <a href="{% url 'index' %}" class="d-flex align-items-center text-decoration-none">
+            <img src="{% static 'img/courses/backarrow.svg' %}" alt="Назад">
+            <span class="ms-2">Назад на главную страницу</span>
+          </a>
+        </div>
+        <div id="course_tags">
+          <button class="course_tag">Высокая интенсивность обучения</button>
+          <button class="course_tag">+1 уровень английского за 3 месяца</button>
+        </div>
+        <h2>Курс <span class="gradient_text">интенсив</span></h2>
+        <p>
+          Цель этих курсов — обеспечить максимальный прогресс в кратчайшие сроки. Интенсивность программы способствует
+          быстрому преодолению языкового барьера и уверенному владению английским в повседневной жизни и
+          профессиональной деятельности.
+        </p>
+        <button class="courses-enrollBtn courses-enrollBtn_settings1" data-bs-toggle="modal" data-bs-target="#enrollModal">Записаться</button>
+      </div>
+
+      <div id="prewiew-additional_content" class="cast_col">
+        <div class="course_preview_phrase"><img src="{% static 'img/courses/course2/c1_preview_phrase1.png' %}">Speaking
+          Club</div>
+        <div class="course_preview_phrase"><img
+            src="{% static 'img/courses/course2/c1_preview_phrase2.png' %}">Продвинутая домашняя работа</div>
+        <div class="course_preview_phrase"><img
+            src="{% static 'img/courses/course2/c1_preview_phrase3.png' %}">Индивидуальный подход</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Для MDSM -->
+  <div id="prewiew-mdsm1" class="ss_container">
+    <div class="row">
+      <div class="col">
+        <div class="back2home">
+          <a href="{% url 'index' %}" class="d-flex align-items-center text-decoration-none">
+            <img src="{% static 'img/courses/backarrow.svg' %}" alt="Назад">
+            <span class="ms-2">Назад на главную страницу</span>
+          </a>
+        </div>
+        <h2>Курс <span class="gradient_text">интенсив</span></h2>
+      </div>
+    </div>
+  </div>
+  <div id="prewiew-mdsm2" class="ss_container2 hs_pad">
+    <div id="course_tags">
+      <button class="course_tag">Высокая интенсивность обучения</button>
+      <button class="course_tag">+1 уровень английского за 3 месяца</button>
+    </div>
+  </div>
+  <div id="prewiew-mdsm3" class="ss_container">
+    <div class="row">
+      <div class="col">
+        <div id="prewiew-additional_content">
+          <div class="course_preview_phrase"><img
+              src="{% static 'img/courses/course2/c1_preview_phrase1.png' %}">Speaking Club</div>
+          <div class="course_preview_phrase"><img
+              src="{% static 'img/courses/course2/c1_preview_phrase2.png' %}">Продвинутая домашняя работа</div>
+          <div class="course_preview_phrase"><img
+              src="{% static 'img/courses/course2/c1_preview_phrase3.png' %}">Индивидуальный подход</div>
+        </div>
+        <p>
+          Цель этих курсов — обеспечить максимальный прогресс в кратчайшие сроки. Интенсивность программы способствует
+          быстрому преодолению языкового барьера и уверенному владению английским в повседневной жизни и
+          профессиональной деятельности.
+        </p>
+        <button class="courses-enrollBtn courses-enrollBtn_settings1" data-bs-toggle="modal" data-bs-target="#enrollModal">Записаться</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- #2 Character -->
+<div id="char" class="ss_container">
+  <h2>Характеристики курса</h2>
+  <p>
+    Интенсивный групповой курс предлагает активное обучение в группе для быстрого улучшения языковых навыков,
+    способствует быстрому освоению материала через групповые проекты и обсуждения.
+  </p>
+  <div class="d-flex sm-col">
+    <div class="char_case">
+      <h3>Курс интенсив</h3>
+      <hr>
+      <ul>
+        <li>3 месяца на каждую степень обучния</li>
+        <li>Бесплатный Speaking Club 1 раз в неделю</li>
+        <li>Высокая интенсивность обучения.</li>
+        <li>2 раза в неделю по 90 минут</li>
+        <li>Маленькие группы по 3-5 студентов</li>
+      </ul>
+      <div class="char_price_container"><span>$15</span> за 90 минут </div>
+    </div>
+    <div id="char_contents">
+      <div id="char_caseses" class="horizontal_scrollable">
+        <div class="char_content">
+          <img src="{% static 'img/courses/course2/char_content_icon1.svg' %}">
+          <h4>Beginner</h4>
+          <ul>
+            <li>Понедельник - 19:00</li>
+            <li>Четверг - 19:00</li>
+          </ul>
+        </div>
+        <div class="char_content">
+          <img src="{% static 'img/courses/course2/char_content_icon2.svg' %}">
+          <h4>Elementary</h4>
+          <ul>
+            <li>Понедельник - 9:00</li>
+            <li>Четверг - 9:00</li>
+          </ul>
+        </div>
+        <div class="char_content">
+          <img src="{% static 'img/courses/course2/char_content_icon3.svg' %}">
+          <h4>Pre-intermediate</h4>
+          <ul>
+            <li>Понедельник - 20:40</li>
+            <li>Четверг - 9:00</li>
+          </ul>
+        </div>
+        <div class="char_content">
+          <img src="{% static 'img/courses/course2/char_content_icon4.svg' %}">
+          <h4>Intermediate</h4>
+          <ul>
+            <li>Вторник - 19:00</li>
+            <li>Суббота - 10:00</li>
+          </ul>
+        </div>
+        <div class="char_content">
+          <img src="{% static 'img/courses/course2/char_content_icon5.svg' %}">
+          <h4>Upper-intermediate</h4>
+          <ul>
+            <li>Вторник - 20:40</li>
+            <li>Суббота - 10:40</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- #3 Advantages LG MD -->
+<div id="adv-lgmd">
+
+  <!-- Заголовок -->
+  <div id="adv_header-lgmd" class="ss_container">
+    <h2>Преимущества <span class="gradient_text">курса</span></h2>
+
+    <!-- Прокрутка для LG MD -->
+    <div id="adv_scroll_buttons">
+      <div class="adv_scroll_button adv_scroll_button2">
+        <a href="#" role="button" id="adv_scroll_left">
+          <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.2656 7.00012H3.26563" stroke="#5569E9" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M7.85938 13.0001L1.85937 7.00012L7.85938 1.00012" stroke="#5569E9" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+      <div class="adv_scroll_button adv_scroll_button2">
+        <a href="#" role="button" id="adv_scroll_right">
+          <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.73438 7.00012H15.7344" stroke="#5569E9" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M11.1406 13.0001L17.1406 7.00012L11.1406 1.00012" stroke="#5569E9" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Кейсы для LG MD -->
+  <div id="adv_cases-lgmd" class="ss_container2">
+    <div id="adv_scroll" data-spy="scroll" data-target="#adv_scroll_spy" data-offset="0"
+      class="spy_horizontal_scrollable hs_pad">
+      <div id="adv_case-1" class="adv_case horizontal_scrollable_item">
+        <div class="adv_content">
+          <h3 id="adv1_case_h3_1">Преимущества курса</h3>
+          <h2>Полное погружение</h2>
+          <p>
+            Общение с преподавателем происходит только на английском языке, никаких поблажек. Вы с первого урока будете
+            готовиться к реальному общению с иностранцами.
+          </p>
+        </div>
+        <div id="adv_case_img_container1" class="adv_case_img_container"><img
+            src="{% static 'img/courses/course2/adv1_case_img1.png' %}"></div>
+      </div>
+      <div id="adv_case-3" class="adv_case horizontal_scrollable_item">
+        <div class="adv_content">
+          <h3 id="adv1_case_h3_2">Преимущества курса</h3>
+          <h2>Активное общение на уроках</h2>
+          <p>
+            70% времени урока уделяется живому общению: вы будете учиться говорить сами и понимать речь преподавателя.
+          </p>
+        </div>
+        <div id="adv_case_img_container3" class="adv_case_img_container"><img
+            src="{% static 'img/courses/course2/adv1_case_img2.png' %}"></div>
+      </div>
+      <div id="adv_case-2" class="adv_case horizontal_scrollable_item">
+        <div class="adv_content">
+          <h3 id="adv1_case_h3_3">Преимущества курса</h3>
+          <h2>Интерактивные занятия</h2>
+          <p>
+            Учите английский с помощью увлекательного TV-сериала, интерактивных уроков, электронных учебников,
+            разговорных занятий онлайн.
+          </p>
+        </div>
+        <div id="adv_case_img_container2" class="adv_case_img_container"><img
+            src="{% static 'img/courses/course2/adv1_case_img3.png' %}"></div>
+      </div>
+      <div id="adv_case-4" class="adv_case horizontal_scrollable_item">
+        <div class="adv_content">
+          <h3 id="adv1_case_h3_4">Преимущества курса</h3>
+          <h2>Универсальная программа</h2>
+          <p>
+            Программа курса универсальна: после прохождения вы будете чувствовать себя уверенно как в бытовом общении,
+            так и на встрече.
+          </p>
+        </div>
+        <div id="adv_case_img_container4" class="adv_case_img_container"><img
+            src="{% static 'img/courses/course2/adv1_case_img4.png' %}"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ss_container">
+    <div id="adv_scroll_spy" class="d-flex">
+      <a href="#adv_case-1" role="button" class="spy_circle spy_link active"></a>
+      <a href="#adv_case-2" role="button" class="spy_circle spy_link"></a>
+      <a href="#adv_case-3" role="button" class="spy_circle spy_link"></a>
+      <a href="#adv_case-4" role="button" class="spy_circle spy_link"></a>
+    </div>
+  </div>
+</div>
+
+<!-- #3 Advantages SM -->
+<div id="adv-sm">
+  <!-- Заголовок -->
+  <div id="adv_header-sm" class="ss_container">
+    <h2>Преимущества <span class="gradient_text">курса</span></h2>
+  </div>
+
+  <!-- Кейсы для SM -->
+  <div id="adv_cases-sm" class="ss_container2">
+    <div id="adv_scroll-sm" data-spy="scroll" data-target="#adv_scroll_spy-sm" data-offset="0"
+      class="spy_horizontal_scrollable hs_pad">
+      <div id="adv_case-1-sm" class="adv_case horizontal_scrollable_item">
+        <div class="adv_content">
+          <h3 id="adv1_case_h3_1-sm">Преимущества курса</h3>
+          <h2>Индивидуальный подход</h2>
+          <p>
+            Индивидуальные занятия позволяют преподавателям сосредоточиться на <br class="br_none br_lg">конкретных
+            потребностях и целях каждого ученика, в то время как <br class="br_none br_lg">групповые занятия
+            способствуют развитию коммуникативных навыков и <br class="br_none br_lg">учат работать в команде.
+          </p>
+        </div>
+        <div id="adv_case_img_container1-sm" class="adv_case_img_container"><img id="adv_case2_content_img1"
+            src="{% static 'img/courses/course2/adv1_case_img1.png' %}"></div>
+      </div>
+      <div id="adv_case-2-sm" class="adv_case horizontal_scrollable_item">
+        <div class="adv_content">
+          <h3 id="adv1_case_h3_2-sm">Преимущества курса</h3>
+          <h2>Вовлеченное обучение с использованием современных технологий</h2>
+          <p>
+            Мы используем интерактивные методики и современные <br class="br_none br_lg">образовательные платформы,
+            которые делают процесс обучения <br class="br_none br_lg">захватывающим и эффективным. Игры, видео,
+            интерактивные задания и <br class="br_none br_lg">другие технологические инструменты способствуют лучшему
+            усвоению <br class="br_none br_lg">материала.
+          </p>
+        </div>
+        <div id="adv_case_img_container2-sm" class="adv_case_img_container"><img id="adv_case2_content_img2"
+            src="{% static 'img/courses/course2/adv1_case_img2.png' %}"></div>
+      </div>
+      <div id="adv_case-3-sm" class="adv_case horizontal_scrollable_item">
+        <div class="adv_content">
+          <h3 id="adv1_case_h3_3-sm">Преимущества курса</h3>
+          <h2>Квалифицированные преподаватели</h2>
+          <p>
+            Наши преподаватели — это сертифицированные специалисты, которые не <br class="br_none br_lg">только
+            владеют английским языком на высоком уровне, но и обладают <br class="br_none br_lg">значительным опытом
+            работы с детьми.
+          </p>
+        </div>
+        <div id="adv_case_img_container3-sm" class="adv_case_img_container"><img id="adv_case2_content_img3"
+            src="{% static 'img/courses/course2/adv1_case_img3.png' %}"></div>
+      </div>
+      <div id="adv_case-4-sm" class="adv_case horizontal_scrollable_item">
+        <div class="adv_content">
+          <h3 id="adv1_case_h3_4-sm">Преимущества курса</h3>
+          <h2>Гибкость расписания</h2>
+          <p>Онлайн-формат обучения предоставляет исключительную гибкость, позволяя <br class="br_none br_lg">подобрать
+            удобное время для занятий, которое подходит вашему семейному <br class="br_none br_lg">расписанию. Это
+            идеально подходит для занятых семей и позволяет детям <br class="br_none br_lg">учиться в комфортных для них
+            условиях.</p>
+        </div>
+        <div id="adv_case_img_container4-sm" class="adv_case_img_container"><img id="adv_case2_content_img4"
+            src="{% static 'img/courses/course2/adv1_case_img4.png' %}"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Прокрутка для SM -->
+  <div id="adv_scroll_buttons-sm" class="ss_container">
+    <div class="adv_scroll_button adv_scroll_button2">
+      <a href="#" role="button" id="adv_scroll_left-sm">
+        <svg width="34.2" height="25.2" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.2656 7.00012H3.26563" stroke="#5569E9" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M7.85938 13.0001L1.85937 7.00012L7.85938 1.00012" stroke="#5569E9" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
+    </div>
+    <div id="adv_scroll_spy-sm">
+      <a href="#adv_case-1-sm" role="button" class="spy_circle spy_link active"></a>
+      <a href="#adv_case-2-sm" role="button" class="spy_circle spy_link"></a>
+      <a href="#adv_case-3-sm" role="button" class="spy_circle spy_link"></a>
+      <a href="#adv_case-4-sm" role="button" class="spy_circle spy_link"></a>
+    </div>
+    <div class="adv_scroll_button adv_scroll_button2">
+      <a href="#" role="button" id="adv_scroll_right-sm">
+        <svg width="34.2" height="25.2" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.73438 7.00012H15.7344" stroke="#5569E9" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M11.1406 13.0001L17.1406 7.00012L11.1406 1.00012" stroke="#5569E9" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- #4 Income lesson -->
+<div class="ss_container">
+  <div id="inc_les">
+    <img src="{% static 'img/courses/inc_les_img-lg.png' %}">
+    <div id="inc_les-content">
+      <h2 id="inc_les-h2">Вводный урок - бесплатно!</h2>
+      <p id="inc_les-p">Познакомьтесь со своим будущим преподавателем и узнайте свой уровень английского на пробном
+        уроке</p>
+      <button id="inc_les-button" data-bs-toggle="modal" data-bs-target="#enrollModal">Попробовать бесплатно</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- #5 Call 2 Ass -->
+<div class="ss_container">
+  <div id="call2ass">
+    <img src="{% static 'img/courses/course2/call2ass_img2-lg.png' %}">
+    <div id="call2ass-content">
+      <h2>Свяжитесь с нами!</h2>
+      <p>Свяжитесь с нами, чтобы мы могли определить уровень ребёнка</p>
+      <form id="call2assForm2" class="ajax-form" method="post" data-url="{% url 'form_handler' %}">
+        {% include 'includes/c2aform2.html' %}
+        <button type="submit" class="courses-enrollBtn courses-enrollBtn_settings1 w-100">Записаться</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
+
+
+{% block scripts-after %}
+
+<script src="{% static 'js/courses/courses_scroll_buttons.js' %}"></script>
+<script src="{% static 'js/index/horizontal_scroll_spy.js' %}"></script>
+
+{% endblock %}

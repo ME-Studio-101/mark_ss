@@ -1,0 +1,194 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block meta_description %}О нас{% endblock %}
+
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/pages/about/_vars-about.css' %}">
+<!-- Стили для экранов до 575px -->
+<link rel="stylesheet" href="{% static 'css/pages/about/_build-about.css' %}">
+{% endblock %}
+
+
+{% block main %}
+<!-- # About about -->
+<div id="ababa" class="ss_container">
+  <div class="back2home mt-2em-lg">
+    <a href="{% url 'index' %}" class="d-flex align-items-center text-decoration-none">
+      <img src="{% static 'img/courses/backarrow.svg' %}" alt="Назад">
+      <span class="ms-2">Назад на главную страницу</span>
+    </a>
+  </div>
+  <h2><span class="gradient_text">О Нас</span></h2>
+  <p>
+    <span>SpeakSwift</span> — это не просто языковая школа, это ваш путь к успешному изучению английского языка в уютной
+    и
+    поддерживающей атмосфере. Несмотря на свой малый размер, SpeakSwift демонстрирует быстрый рост и развитие,
+    благодаря своему индивидуальному подходу и прогрессивным методам обучения. Мы гордимся тем, что можем
+    предложить образовательные программы, которые не только соответствуют, но и превосходят ожидания наших
+    студентов.
+  </p>
+  <div id="ababa_image">
+    <img src="{% static 'img/about/ababa_image.png' %}">
+  </div>
+</div>
+
+
+<!-- About Carousel -->
+<div id="abaca_carousel" class="carousel carousel-dark slide ss_container2 hs_pad" 
+  data-bs-ride="carousel" data-bs-touch="true">
+  <button class="carousel-control-prev" type="button" data-bs-target="#abaca_carousel" data-bs-slide="prev">
+    <div class="abaca_scroll_button">
+      <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.2656 7.00012H3.26563" stroke="#3EC5E1" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M7.85938 13.0001L1.85937 7.00012L7.85938 1.00012" stroke="#3EC5E1" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </div>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#abaca_carousel" data-bs-slide="next">
+    <div class="abaca_scroll_button">
+      <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.73438 7.00012H15.7344" stroke="#3EC5E1" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M11.1406 13.0001L17.1406 7.00012L11.1406 1.00012" stroke="#3EC5E1" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </div>
+  </button>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="abaca_case">
+        <div id="abaca_aplication-1" class="abaca_aplication">
+          <div id="abaca_aplication_in-1" class="abaca_aplication_in"></div>
+        </div>
+        <h3>Почему SpeakSwift ?</h3>
+        <h2>Прогрессивные методы обучения</h2>
+        <p>
+          В SpeakSwift мы используем передовые технологии и методики обучения, делая процесс изучения английского языка
+          не
+          только эффективным, но и увлекательным. Наши курсы разработаны таким образом, чтобы максимизировать
+          вовлеченность и обеспечить понимание материала на глубоком уровне.
+        </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="abaca_case">
+        <div id="abaca_aplication-2" class="abaca_aplication">
+          <div id="abaca_aplication_in-2" class="abaca_aplication_in"></div>
+        </div>
+        <h3>Почему SpeakSwift ?</h3>
+        <h2>Индивидуальный подход</h2>
+        <p>
+          Каждый студент для нас уникален. Мы ценим индивидуальные особенности и потребности наших клиентов, стремясь
+          предложить наиболее подходящий формат обучения, будь то групповые занятия или индивидуальные уроки.
+        </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="abaca_case">
+        <div id="abaca_aplication-3" class="abaca_aplication">
+          <div id="abaca_aplication_in-3" class="abaca_aplication_in"></div>
+        </div>
+        <h3>Почему SpeakSwift ?</h3>
+        <h2>Международное сообщество</h2>
+        <p>
+          В SpeakSwift вы станете частью глобального сообщества студентов, объединенных общей целью — освоение
+          английского
+          языка. Общение с однокурсниками из разных уголков мира не только расширит ваш кругозор, но и позволит
+          практиковать английский в разнообразных контекстах.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#abaca_carousel" data-bs-slide-to="0" class="spy_circle active"
+      aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#abaca_carousel" data-bs-slide-to="1" class="spy_circle"
+      aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#abaca_carousel" data-bs-slide-to="2" class="spy_circle"
+      aria-label="Slide 3"></button>
+  </div>
+</div>
+
+
+<!-- About WHY -->
+<div id="abawy_header" class="ss_container">
+  <h2>Почему стоит изучать английский <span class="gradient_text">именно у нас?</span></h2>
+</div>
+<div id="abawy_cases" class="horizontal_scrollable hs_pad">
+  <div class="abawy_case">
+    <div id="abawy_image1" class="abawy_image">
+      <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M10.7583 16.8996C15.4663 16.8996 19.283 13.4523 19.283 9.19981C19.283 4.94732 15.4663 1.5 10.7583 1.5C6.05021 1.5 2.23356 4.94732 2.23356 9.19981C2.23356 10.3448 2.51025 11.4314 3.00653 12.4081L1.16797 16.8996L6.49592 15.8695C7.74979 16.5247 9.20555 16.8996 10.7583 16.8996Z"
+          stroke="#5196FF" stroke-width="2" stroke-linejoin="round" />
+        <path
+          d="M12.043 21.2748C13.3734 22.0507 14.9587 22.5009 16.6601 22.5009C18.2128 22.5009 19.6686 22.126 20.9225 21.4708L26.2505 22.5009L24.4119 18.0094C24.9081 17.0327 25.1849 15.9461 25.1849 14.8011C25.1849 13.0586 24.544 11.4511 23.4635 10.1608C22.4198 8.91433 20.9659 7.96365 19.2831 7.47266"
+          stroke="#5196FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path
+          d="M15.1026 10.6007C14.333 10.6007 13.7092 9.97393 13.7092 9.20075C13.7092 8.42757 14.333 7.80078 15.1026 7.80078C15.8722 7.80078 16.4961 8.42757 16.4961 9.20075C16.4961 9.97393 15.8722 10.6007 15.1026 10.6007Z"
+          fill="#5196FF" />
+        <path
+          d="M10.9229 10.6007C10.1534 10.6007 9.52948 9.97393 9.52948 9.20075C9.52948 8.42757 10.1534 7.80078 10.9229 7.80078C11.6925 7.80078 12.3164 8.42757 12.3164 9.20075C12.3164 9.97393 11.6925 10.6007 10.9229 10.6007Z"
+          fill="#5196FF" />
+        <path
+          d="M6.74325 10.6007C5.97367 10.6007 5.34979 9.97393 5.34979 9.20075C5.34979 8.42757 5.97367 7.80078 6.74325 7.80078C7.51284 7.80078 8.13672 8.42757 8.13672 9.20075C8.13672 9.97393 7.51284 10.6007 6.74325 10.6007Z"
+          fill="#5196FF" />
+      </svg>
+    </div>
+    <h3>Прогрессивные Методы Обучения</h3>
+    <p>
+      Наша школа не просто обучает английскому языку — мы готовим вас к успешной жизни и карьере в международном
+      масштабе. С SpeakSwift вы получите не только глубокие знания языка, но и уверенность в общении, необходимую для
+      достижения ваших амбициозных целей.
+    </p>
+  </div>
+  <div class="abawy_case">
+    <div id="abawy_image2" class="abawy_image">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M12.0016 12.0002C13.7413 12.0002 15.1516 10.5899 15.1516 8.8502C15.1516 7.1105 13.7413 5.7002 12.0016 5.7002C10.2619 5.7002 8.85156 7.1105 8.85156 8.8502C8.85156 10.5899 10.2619 12.0002 12.0016 12.0002Z"
+          stroke="#14C666" stroke-width="2" />
+        <path
+          d="M12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5C6.20101 1.5 1.5 6.20101 1.5 12C1.5 17.799 6.20101 22.5 12 22.5Z"
+          stroke="#14C666" stroke-width="2" />
+        <path
+          d="M18.2696 20.4004C18.1026 17.3643 17.173 15.1504 12.002 15.1504C6.83105 15.1504 5.90148 17.3643 5.73438 20.4004"
+          stroke="#14C666" stroke-width="2" stroke-linecap="round" />
+      </svg>
+    </div>
+    <h3>Крутые Студенты</h3>
+    <p>
+      Наши студенты — наше вдохновение и гордость. Они — амбициозные, талантливые люди со всего мира, стремящиеся к
+      личностному и профессиональному росту. Вместе мы создаем динамичное и поддерживающее сообщество, где каждый может
+      найти друзей, единомышленников и партнеров для обучения.
+    </p>
+  </div>
+</div>
+
+
+<!-- About Call 2 Us -->
+<div class="ss_container">
+  <div id="abac2u">
+    <div id="abac2u_content">
+      <h2>Присоединяйтесь к нам!</h2>
+      <p>
+        Присоединяйтесь к нам в SpeakSwift, и вместе мы сделаем ваше обучение английскому языку приключением, которое
+        изменит вашу жизнь к лучшему!
+      </p>
+      <button id="abac2u_button" data-bs-toggle="modal" data-bs-target="#enrollModal">Попробовать бесплатно</button>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+
+{% block scripts-after %}
+<script src="{% static 'js/courses/courses_scroll_buttons.js' %}"></script>
+<script src="{% static 'js/index/horizontal_scroll_spy.js' %}"></script>
+{% endblock %}

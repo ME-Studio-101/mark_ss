@@ -1,0 +1,283 @@
+:root {
+    --char_mt: 57.6px auto 0;
+
+    --h2_fsz: 43.2px;
+    --h2_mt: 57.6px;
+    --p_fsz: 28.8px;
+    --p_mt: 21.6px;
+    --p_mb: 43.2px;
+
+    --ch_case_p: 28.8px;
+    --ch_case_h3_fsz: 36px;
+    --ch_case_hr_m: 28.8px 0;
+    --ch_case_li_mb: 43.2px;
+    --ch_case_li_fsz: 28.8px;
+    --ch_price_c_p: 28.8px;
+    --ch_price_c_fsz: 28.8px;
+    --ch_price_c_fsz2: 43.2px;
+}
+
+
+
+#char {
+    margin: var(--char_mt);
+    background-color: #f9f9f9;
+    padding-bottom: 64px;
+}
+
+#char h2 {
+    margin-top: var(--h2_mt);
+    font-family: Lato-Bold;
+    font-size: var(--h2_fsz);
+    color: var(--black_main_color);
+}
+
+#char p {
+    margin-top: var(--p_mt);
+    margin-bottom: var(--p_mb);
+    font-family: Lato-Regular;
+    font-size: var(--p_fsz);
+    color: var(--black_submain_color);
+}
+
+
+/* Кейсы - Блок1 */
+.char_case {
+    width: 100%;
+    height: auto;
+    flex: 0 0 auto;
+    padding: var(--ch_case_p);
+    background-color: var(--ch_case_color1);
+    border-radius: 24px;
+
+}
+
+.char_case h3 {
+    font-family: Lato-Bold;
+    font-size: var(--ch_case_h3_fsz);
+    color: var(--black_main_color);
+}
+
+.char_case hr {
+    margin: var(--ch_case_hr_m);
+    background: var(--char_hr_gradient);
+    border: none;
+    height: 1px;
+    opacity: 1;
+}
+
+
+.char_case li {
+    margin-bottom: var(--ch_case_li_mb);
+    font-family: Lato-Regular;
+    font-size: var(--ch_case_li_fsz);
+    line-height: 150%;
+    color: var(--black_main_color);
+}
+
+.char_price_container {
+    padding: var(--ch_price_c_p);
+    font-family: Lato-Medium;
+    font-size: var(--ch_price_c_fsz);
+    line-height: 150%;
+    background-color: #ffffff;
+    color: var(--black_main_color);
+    border-radius: 24px;
+}
+
+.char_price_container span {
+    font-family: Lato-Bold;
+    font-size: var(--ch_price_c_fsz2);
+    line-height: 150%;
+    color: var(--black_main_color);
+}
+
+
+/* Кейсы - Блок2 */
+#char_contents {
+    margin-top: 28.8px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 28.8px;
+}
+
+.char_content {
+    width: 428.4px;
+    height: 410.4px;
+    padding: 48.6px 43.2px;
+    margin: 14.4px;
+    flex: 0 0 auto;
+    border-radius: 24px;
+    background-color: #FFFFFF;
+}
+
+.char_content img {
+    width: 100.8px;
+    height: 100.8px;
+}
+
+.char_content h4 {
+    margin-top: 28.8px;
+    font-family: Lato-Bold;
+    font-size: 36px;
+    color: #333;
+}
+
+.char_content ul {
+    margin-top: 28.8px;
+    padding: 0;
+}
+
+.char_content li {
+    padding-bottom: 14.4px;
+    list-style: none;
+    font-family: Lato-Regular;
+    font-size: 28.8px;
+    color: #676767;
+    line-height: 150%;
+}
+
+
+/* костыль */
+.sm-col {
+    flex-direction: column;
+}
+
+
+/* костыль 1 */
+.char_price_row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.char_price_row img {
+    width: 100.8px;
+    height: 100.8px;
+    margin-right: 28.8px;
+}
+
+.char_price_teacher {
+    margin-right: 24px;
+    order: 1;
+}
+
+.char_price_row h4 {
+    font-family: Lato-Medium;
+    font-size: 28.8px;
+    color: #333;
+    margin-top: 21.6px;
+    margin-bottom: 3.6px;
+}
+
+#char_p0 {
+    font-size: 25.2px !important;
+}
+
+#char_p1 {
+    font-family: Lato-Medium !important;
+    font-size: 28.8px !important;
+    color: #676767 !important;
+}
+
+#char_p1 span {
+    font-family: Lato-Bold;
+    font-size: 36px !important;
+    color: #333;
+}
+
+
+
+
+/* костыль 2 */
+.char_content_header {
+    width: 100%;
+    background: linear-gradient(to right, #FF5858 0%, #F857A6 100%);
+    border-radius: 24px;
+    padding: 28.8px;
+}
+
+.char_price_row2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.char_price_row2 img {
+    width: 79.2px;
+    height: 79.2px;
+    margin-right: 14.4px;
+    order: 0;
+}
+
+.char_price_teacher2 {
+    margin-top: 21.6px;
+    order: 2;
+}
+
+.char_price_row2 h4 {
+    font-family: Lato-SemiBold;
+    font-size: 28.8px;
+    color: #FFFFFF;
+    margin-bottom: 3.6px;
+}
+
+#char_p2 {
+    font-family: Lato-Regular !important;
+    font-size: 25.2px !important;
+    color: #FFFFFF !important;
+    order: 1;
+}
+
+
+#char_p3 {
+    margin-left: 10.6px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    font-family: Lato-Medium !important;
+    font-size: 28.8px !important;
+    color: #FFFFFF !important;
+    order: 1;
+}
+
+#char_p3 span {
+    font-family: Lato-Bold;
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+/* Блок ценника в контентах */
+.char_content_div {
+    margin-top: 21.6px;
+    padding: 25.2px 43.2px; 
+    border-radius: 24px;
+    font-family: Lato-Medium;
+    font-size: 28.8px;
+    color: #333;
+}
+
+#char_content_div1 {
+    background-color: #E8F9F080;
+}
+
+#char_content_div2 {
+    background-color: #FFFCE680;
+}
+
+#char_content_div3 {
+    background-color: #FFF6EE80;
+}
+
+#char_content_div4 {
+    background-color: #E6F6F980;
+}
+
+#char_content_div5 {
+    background-color: #F5EEFF80;
+}
+
+.char_content_div span {
+    font-family: Lato-Bold;
+    font-size: 36px;
+}
